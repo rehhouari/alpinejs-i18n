@@ -4,14 +4,29 @@ All notable changes to the "**alpinejs-i18n**" WhatItIs/program/extension/API/wh
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+---
+
 ## [Unreleased]
 
 ---
+
+## [0.0.1] - 2021-05-14
+
+### Changed
+
+-   Use subscription instead of events to update components (Thanks to @KevinBatdorf for suggestion & @ryangjchandler's Spruce)
+-	- The event still exit for it have its use cases
+
+### Added
+
+-	Usage from Javascript
+
 ## [0.0.0] - 2021-05-14
 
 ### Added
 
-* First version
+-   First version
 
-[unreleased]: https://github.com/pinecone-router/router/compare/0.0.0...HEAD
+[unreleased]: https://github.com/pinecone-router/router/compare/0.0.1...HEAD
 [0.0.0]: https://github.com/pinecone-router/router/compare/0.0.0...0.0.0
+[0.0.1]: https://github.com/pinecone-router/router/compare/0.0.0...0.0.1

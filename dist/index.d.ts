@@ -11,8 +11,13 @@ declare const AlpineI18n: {
      */
     messages: any;
     /**
+     * components that use the magic helpers
+     */
+    subscribers: never[];
+    /**
      * event that will be dispatched when the locale changes
-     * in order to update alpine components
+     * useful for when using outside of alpine components
+     * like changing "dir" inside the body
      */
     localChange: Event;
     start(): void;
@@ -22,13 +27,29 @@ declare const AlpineI18n: {
      * @param messages the translation data
      */
     create(locale: string, messages: object): void;
-    dispatchEvent(): void;
+    /**
+     * Get the localized version of a string
+     * @param name the name of the message
+     * @param vars optional variables to be passed to the string
+     * @returns string
+     */
+    t(name: string, vars: object): string;
     /**
      * Check if a locale exists in the message list
      * If it don't throw an Error. Does nothing otherwise.
      * @param locale locale to check
      */
     checkLocale(locale: string): void;
+    /**
+     * Save an element to update it when locale change
+     * @param el The element that uses the magic helper
+     */
+    subscribe(el: never): void;
+    /**
+     * Update components that use the magic helpers
+     * taken from Spruce
+     */
+    updateSubscribers(): void;
 };
 declare global {
     interface Window {

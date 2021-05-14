@@ -1,12 +1,14 @@
 const AlpineI18n = {
-	version: '0.0.0',
+	version: '0.0.1',
+
 	/**
 	 * setter for the current locale
 	 */
 	set locale(name) {
 		//this.checkLocale(name)
 		this.currentLocale = name;
-		this.dispatchEvent();
+		window.dispatchEvent(this.localChange);
+		this.updateSubscribers();
 	},
 
 	/**
@@ -25,25 +27,25 @@ const AlpineI18n = {
 	messages: <any>{},
 
 	/**
+	 * components that use the magic helpers
+	 */
+	subscribers: [],
+
+	/**
 	 * event that will be dispatched when the locale changes
-	 * in order to update alpine components
+	 * useful for when using outside of alpine components
+	 * like changing "dir" inside the body
 	 */
 	localChange: new Event('locale-change'),
 
 	start() {
-		// this will add a listener for the locale-change to all components.
-		window.Alpine.onComponentInitialized((component: any) => {
-			component.$el.addEventListener('locale-change', () => {
-				component.$el.__x.updateElements(component.$el);
-			});
-		});
-
 		/**
 		 * magic helper $locale
 		 * 1) set the locale: $locale('code')
 		 * 2) get the locale $locale()
 		 **/
-		window.Alpine.addMagicProperty('locale', () => {
+		window.Alpine.addMagicProperty('locale', ($el: never) => {
+			this.subscribe($el);
 			return (locale: string | undefined) => {
 				if (!locale) return this.locale;
 				this.checkLocale(locale);
@@ -56,20 +58,10 @@ const AlpineI18n = {
 		 * $t('key')
 		 * $t('key', {var: val})
 		 */
-		window.Alpine.addMagicProperty('t', ($el: any) => {
+		window.Alpine.addMagicProperty('t', ($el: never) => {
+			this.subscribe($el);
 			return (name: string, vars: object) => {
-				let message: string = name
-					.split('.')
-					.reduce((o, i) => o[i], this.messages[this.locale]);
-				for (const key in vars) {
-					if (Object.prototype.hasOwnProperty.call(vars, key)) {
-						//@ts-ignore
-						const val: string = vars[key];
-						let regexp = new RegExp('\{\s*('+key+')\s*\}', '\g')						
-						message = message.replaceAll(regexp, val);
-					}
-				}
-				return message;
+				return this.t(name, vars);
 			};
 		});
 	},
@@ -80,14 +72,30 @@ const AlpineI18n = {
 	 * @param messages the translation data
 	 */
 	create(locale: string, messages: object) {
-		this.locale = locale;
 		this.messages = messages;
+		this.checkLocale(locale);
+		this.locale = locale;
 	},
 
-	dispatchEvent() {
-		document.querySelectorAll('[x-data]').forEach((el) => {
-			el.dispatchEvent(this.localChange);
-		});
+	/**
+	 * Get the localized version of a string
+	 * @param name the name of the message
+	 * @param vars optional variables to be passed to the string
+	 * @returns string
+	 */
+	t(name: string, vars: object) {
+		let message: string = name
+			.split('.')
+			.reduce((o, i) => o[i], this.messages[this.locale]);
+		for (const key in vars) {
+			if (Object.prototype.hasOwnProperty.call(vars, key)) {
+				//@ts-ignore
+				const val: string = vars[key];
+				let regexp = new RegExp('{s*(' + key + ')s*}', 'g');
+				message = message.replaceAll(regexp, val);
+			}
+		}
+		return message;
 	},
 
 	/**
@@ -101,6 +109,26 @@ const AlpineI18n = {
 				`Alpine I18n: The locale ${locale} does not exist.`,
 			);
 		}
+	},
+
+	/**
+	 * Save an element to update it when locale change
+	 * @param el The element that uses the magic helper
+	 */
+	subscribe(el: never) {
+		if (!this.subscribers.includes(el)) {
+			this.subscribers.push(el);
+		}
+	},
+
+	/**
+	 * Update components that use the magic helpers
+	 * taken from Spruce
+	 */
+	updateSubscribers() {
+		this.subscribers.forEach((el: any) => {
+			el.__x?.updateElements(el);
+		});
 	},
 };
 
