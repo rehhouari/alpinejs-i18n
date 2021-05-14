@@ -5,7 +5,7 @@ Internationalization (i18n) support for Alpine.js
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18nlabel=version&sort=semver)](https://github.com/rehhouari/alpinejs-i18n/tree/0.0.1)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@0.0.1)
 [![Downloads from Jsdelivr Github](https://img.shields.io/jsdelivr/gh/hm/rehhouari/alpinejs-i18nlogo=github&logoColor=)](https://www.jsdelivr.com/package/gh/rehhouari/alpinejs-i18n)
-[![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n&logo=npm)](https://www.jsdelivr.com/package/npm/{npm-pacakge})
+[![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n&logo=npm)](https://www.jsdelivr.com/package/npm/alpinejs-i18n)
 [![npm](https://img.shields.io/npm/dm/alpinejs-i18n&label=npm&logo=npm&logoColor=37C8AB)](https://npmjs.com/package/alpinejs-i18n)
 [![Changelog](https://img.shields.io/badge/change-log-)](/CHANGELOG.md)
 
@@ -213,12 +213,12 @@ Community project by [@rehhouari](https://github.com/rehhouari), not affiliated 
 
 ## Acknowledgments
 
-- [@KevinBatdorf](https://twitter.com/KevinBatdorf) for the early feedback and suggestions.
+-   [@KevinBatdorf](https://twitter.com/KevinBatdorf) for the early feedback and suggestions.
 
 ## Credits
 
-- `subscribe` & `updateSubscribers` methods are taken from [Ryan Chandler's](https://github.com/ryangjchandler) [Spruce](https://github.com/ryangjchandler/spruce).
-- - Copyright (c) 2021 Ryan Chandler. MIT License.
+-   `subscribe` & `updateSubscribers` methods are taken from [Ryan Chandler's](https://github.com/ryangjchandler) [Spruce](https://github.com/ryangjchandler/spruce).
+-   -   Copyright (c) 2021 Ryan Chandler. MIT License.
 
 ## License
 
