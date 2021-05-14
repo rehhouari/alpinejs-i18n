@@ -16,6 +16,8 @@ It provide two _magic helpers_ that you can use to localize strings in your Alpi
 
 > **Development Version! Changes to the API may occur, which will be tracked in the [CHANGELOG.md](/CHANGELOG.md)**
 
+#### [Demo](https://alpinejs-i18n-example.vercel.app/)
+
 ## Features
 
 -   Easy localization of strings using a [magic helper](#t-magic-helper)
