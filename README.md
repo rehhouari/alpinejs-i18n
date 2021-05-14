@@ -193,7 +193,7 @@ AlpineI18n.locale = 'ar';
 	var rtlLocales = ['ar', 'fa'];
 	// listen to locale changes
 	window.addEventListener('locale-change', function () {
-		if (rtlLanguages.includes(document.body.getAttribute('dir'))) {
+		if (rtlLocales.includes(window.AlpineI18n.locale)) {
 			document.body.setAttribute('dir', 'rtl');
 		} else {
 			document.body.removeAttribute('dir');
