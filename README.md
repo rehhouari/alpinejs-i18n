@@ -7,7 +7,7 @@ Internationalization (i18n) support for Alpine.js
 [![Downloads from Jsdelivr Github](https://img.shields.io/jsdelivr/gh/hm/rehhouari/alpinejs-i18nlogo=github&logoColor=)](https://www.jsdelivr.com/package/gh/rehhouari/alpinejs-i18n)
 [![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n&logo=npm)](https://www.jsdelivr.com/package/npm/alpinejs-i18n)
 [![npm](https://img.shields.io/npm/dm/alpinejs-i18n&label=npm&logo=npm&logoColor=37C8AB)](https://npmjs.com/package/alpinejs-i18n)
-[![Changelog](https://img.shields.io/badge/change-log)](/CHANGELOG.md)
+[![Changelog](https://img.shields.io/badge/change-log-log)](/CHANGELOG.md)
 
 ## About
 
