@@ -1,0 +1,2898 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "alpine-i18n",
+      "description": "Internationalization (i18n) support for Alpine.js",
+      "license": "MIT",
+      "author": "Rafik El Hadi Houari",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/rehhouari/alpine-i18n"
+      },
+      "source": "src/index.js",
+      "main": "dist/index.js",
+      "umd:main": "dist/index.umd.js",
+      "module": "dist/index.module.js",
+      "scripts": {
+        "build": "microbundle",
+        "watch": "microbundle watch",
+        "test": "jest"
+      },
+      "dependencies": {
+        "alpinejs": "^2.8.0"
+      },
+      "devDependencies": {
+        "@babel/preset-env": "^7.11.0",
+        "@testing-library/dom": "^7.2.2",
+        "@testing-library/jest-dom": "^5.5.0",
+        "jest": "^25.4.0",
+        "jsdom-simulant": "^1.1.2",
+        "microbundle": "^0.12.3"
+      }
+    },
+    "prefix": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/rehhouari/.pnpm-store/v3",
+    "virtualStoreDir": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jsdom-simulant/1.1.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "jsdom-simulant",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jsdom-simulant/1.1.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "6 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/microbundle failed, reason: socket hang up",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/microbundle"
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.12.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "^5.5.0"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.12.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "9 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/jsdom-simulant/1.1.2",
+    "size": 8375,
+    "status": "started"
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jsdom-simulant/1.1.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "11 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.12.0",
+    "size": 24332,
+    "status": "started"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.12.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest/25.5.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "jest",
+      "rawSpec": "^25.4.0"
+    }
+  },
+  "14 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest/25.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "15 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/jest/25.5.4",
+    "size": 2199,
+    "status": "started"
+  },
+  "16 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest/25.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/alpinejs/2.8.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "alpinejs",
+      "rawSpec": "^2.8.0"
+    }
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/alpinejs/2.8.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/alpinejs/2.8.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/preset-env/7.14.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@babel/preset-env",
+      "rawSpec": "^7.11.0"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-env/7.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/dom/7.31.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/dom",
+      "rawSpec": "^7.2.2"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/dom/7.31.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-env/7.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/microbundle/0.12.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "microbundle",
+      "rawSpec": "^0.12.3"
+    }
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/microbundle/0.12.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "27 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "css",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "29 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/testing-library__jest-dom/5.9.5",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "@types/testing-library__jest-dom",
+      "rawSpec": "^5.9.1"
+    }
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.9.5",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "31 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "chalk",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "33 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "aria-query",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.14.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.9.2"
+    }
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "37 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@testing-library/dom/7.31.0",
+    "size": 612439,
+    "status": "started"
+  },
+  "38 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "size": 9437,
+    "status": "started"
+  },
+  "39 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.9.5",
+    "size": 6112,
+    "status": "started"
+  },
+  "40 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "size": 10923,
+    "status": "started"
+  },
+  "41 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "size": 23429,
+    "status": "started"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/runtime/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/testing-library__jest-dom/5.9.5",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "45 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/redent/3.0.0",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "redent",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "47 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/7.13.12",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining",
+      "rawSpec": "^7.13.12"
+    }
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/7.13.12",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/7.13.12",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/aria-query/4.2.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "52 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-async-generator-functions/7.13.15",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-async-generator-functions",
+      "rawSpec": "^7.13.15"
+    }
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-async-generator-functions/7.13.15",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "54 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-class-properties",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "56 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash/4.17.21",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "lodash",
+      "rawSpec": "^4.17.15"
+    }
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-async-generator-functions/7.13.15",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "60 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/microbundle/0.12.4",
+    "size": 85722,
+    "status": "started"
+  },
+  "61 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/compat-data/7.14.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/compat-data",
+      "rawSpec": "^7.14.0"
+    }
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/compat-data/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "63 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/css.escape/1.5.1",
+    "wanted": {
+      "dependentId": "/@testing-library/jest-dom/5.12.0",
+      "name": "css.escape",
+      "rawSpec": "^1.5.1"
+    }
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "65 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-validator-option/7.12.17",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/helper-validator-option",
+      "rawSpec": "^7.12.17"
+    }
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-validator-option/7.12.17",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "67 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/import-local/3.0.2",
+    "wanted": {
+      "dependentId": "/jest/25.5.4",
+      "name": "import-local",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-local/3.0.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash/4.17.21",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-validator-option/7.12.17",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/compat-data/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "72 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-json-strings/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-json-strings",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-json-strings/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "74 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-json-strings/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "75 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-export-namespace-from/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-export-namespace-from",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "76 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-export-namespace-from/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "77 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-export-namespace-from/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "78 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "size": 2955,
+    "status": "started"
+  },
+  "79 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/css.escape/1.5.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "80 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-class-static-block/7.13.11",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-class-static-block",
+      "rawSpec": "^7.13.11"
+    }
+  },
+  "81 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-static-block/7.13.11",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "82 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-static-block/7.13.11",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "83 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/import-local/3.0.2",
+    "size": 2199,
+    "status": "started"
+  },
+  "84 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/import-local/3.0.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "85 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-optional-catch-binding/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-optional-catch-binding",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "86 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-optional-catch-binding/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-optional-catch-binding/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "88 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "size": 1814,
+    "status": "started"
+  },
+  "89 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/redent/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "90 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-numeric-separator/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-numeric-separator",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "91 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-numeric-separator/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "92 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-numeric-separator/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "93 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-nullish-coalescing-operator/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-nullish-coalescing-operator",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "94 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-nullish-coalescing-operator/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "95 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-nullish-coalescing-operator/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "96 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-dynamic-import/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-dynamic-import",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "97 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-dynamic-import/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "98 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-dynamic-import/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "99 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-object-rest-spread/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-object-rest-spread",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "100 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-object-rest-spread/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "101 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-object-rest-spread/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "102 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-private-methods/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-private-methods",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "103 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-private-methods/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "104 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-compilation-targets/7.13.16",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/helper-compilation-targets",
+      "rawSpec": "^7.13.16"
+    }
+  },
+  "105 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-compilation-targets/7.13.16",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "106 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-private-methods/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "107 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-compilation-targets/7.13.16",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "108 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-private-property-in-object/7.14.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-private-property-in-object",
+      "rawSpec": "^7.14.0"
+    }
+  },
+  "109 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-private-property-in-object/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "110 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-private-property-in-object/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "111 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-unicode-property-regex/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-unicode-property-regex",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "112 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-unicode-property-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "113 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-unicode-property-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "114 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-logical-assignment-operators/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-logical-assignment-operators",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "115 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-logical-assignment-operators/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "116 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-logical-assignment-operators/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "117 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-nullish-coalescing-operator/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-nullish-coalescing-operator",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "118 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-nullish-coalescing-operator/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "119 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-nullish-coalescing-operator/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "120 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-json-strings/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-json-strings",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "121 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-json-strings/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "122 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-json-strings/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "123 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/microbundle/0.12.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "124 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-numeric-separator/7.10.4",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-numeric-separator",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "125 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-numeric-separator/7.10.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "126 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-numeric-separator/7.10.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "127 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-logical-assignment-operators/7.10.4",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-logical-assignment-operators",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "128 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-logical-assignment-operators/7.10.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "129 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-object-rest-spread/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-object-rest-spread",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "130 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-object-rest-spread/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "131 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-logical-assignment-operators/7.10.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "132 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-object-rest-spread/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "133 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-class-static-block/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-class-static-block",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "134 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-class-static-block/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "135 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-class-static-block/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "136 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-export-namespace-from/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-export-namespace-from",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "137 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-export-namespace-from/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "138 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-export-namespace-from/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "139 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-optional-catch-binding/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-optional-catch-binding",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "140 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-optional-catch-binding/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "141 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-optional-catch-binding/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "142 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-optional-chaining/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-optional-chaining",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "143 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-optional-chaining/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "144 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/helper-plugin-utils/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/helper-plugin-utils",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "145 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-plugin-utils/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "146 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-private-property-in-object/7.14.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-private-property-in-object",
+      "rawSpec": "^7.14.0"
+    }
+  },
+  "147 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-private-property-in-object/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "148 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-private-property-in-object/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "149 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-optional-chaining/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "150 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/helper-plugin-utils/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "151 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-top-level-await/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-top-level-await",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "152 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-top-level-await/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "153 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-top-level-await/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "154 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-arrow-functions/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-arrow-functions",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "155 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-arrow-functions/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "156 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-class-properties/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-class-properties",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "157 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-class-properties/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "158 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-class-properties/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "159 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-arrow-functions/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "160 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-async-to-generator/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-async-to-generator",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "161 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-async-to-generator/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "162 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-async-to-generator/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "163 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-optional-chaining/7.13.12",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-proposal-optional-chaining",
+      "rawSpec": "^7.13.12"
+    }
+  },
+  "164 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-optional-chaining/7.13.12",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "165 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-optional-chaining/7.13.12",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "166 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-dynamic-import/7.8.3",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-dynamic-import",
+      "rawSpec": "^7.8.3"
+    }
+  },
+  "167 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-dynamic-import/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "168 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-dynamic-import/7.8.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "169 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@jest/core/25.5.4",
+    "wanted": {
+      "dependentId": "/jest/25.5.4",
+      "name": "@jest/core",
+      "rawSpec": "^25.5.4"
+    }
+  },
+  "170 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@jest/core/25.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "171 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-block-scoped-functions/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-block-scoped-functions",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "172 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-block-scoped-functions/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "173 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-block-scoped-functions/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "174 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-modules-amd/7.14.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-modules-amd",
+      "rawSpec": "^7.14.0"
+    }
+  },
+  "175 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-amd/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "176 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-amd/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "177 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@jest/core/25.5.4",
+    "size": 37145,
+    "status": "started"
+  },
+  "178 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@jest/core/25.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "179 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-block-scoping/7.14.1",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-block-scoping",
+      "rawSpec": "^7.14.1"
+    }
+  },
+  "180 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-block-scoping/7.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "181 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-block-scoping/7.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "182 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-async-generators/7.8.4",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-syntax-async-generators",
+      "rawSpec": "^7.8.4"
+    }
+  },
+  "183 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-async-generators/7.8.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "184 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-async-generators/7.8.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "185 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-modules-systemjs/7.13.8",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-modules-systemjs",
+      "rawSpec": "^7.13.8"
+    }
+  },
+  "186 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-systemjs/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "187 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-systemjs/7.13.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "188 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-literals/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-literals",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "189 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-literals/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "190 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-literals/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "191 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-classes/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-classes",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "192 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-classes/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "193 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-classes/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "194 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-modules-umd/7.14.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-modules-umd",
+      "rawSpec": "^7.14.0"
+    }
+  },
+  "195 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-umd/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "196 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-umd/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "197 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-duplicate-keys failed, reason: read ETIMEDOUT",
+      "type": "system",
+      "errno": "ETIMEDOUT",
+      "code": "ETIMEDOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-duplicate-keys"
+  },
+  "198 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals failed, reason: read ETIMEDOUT",
+      "type": "system",
+      "errno": "ETIMEDOUT",
+      "code": "ETIMEDOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals"
+  },
+  "199 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-named-capturing-groups-regex/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-named-capturing-groups-regex",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "200 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-named-capturing-groups-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "201 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-named-capturing-groups-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "202 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jest-cli/25.5.4",
+    "wanted": {
+      "dependentId": "/jest/25.5.4",
+      "name": "jest-cli",
+      "rawSpec": "^25.5.4"
+    }
+  },
+  "203 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-cli/25.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "204 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-object-super/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-object-super",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "205 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-object-super/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "206 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-object-super/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "207 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-parameters/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-parameters",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "208 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-parameters/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "209 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-parameters/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "210 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-property-literals/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-property-literals",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "211 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-property-literals/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "212 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-property-literals/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "213 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/jest-cli/25.5.4",
+    "size": 16732,
+    "status": "started"
+  },
+  "214 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jest-cli/25.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "215 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-shorthand-properties/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-shorthand-properties",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "216 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-shorthand-properties/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "217 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-shorthand-properties/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "218 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-modules-commonjs/7.14.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-modules-commonjs",
+      "rawSpec": "^7.14.0"
+    }
+  },
+  "219 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-commonjs/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "220 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-modules-commonjs/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "221 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-spread/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-spread",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "222 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-spread/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "223 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-spread/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "224 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-reserved-words/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-reserved-words",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "225 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-reserved-words/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "226 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-reserved-words/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "227 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-sticky-regex/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-sticky-regex",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "228 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-sticky-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "229 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-sticky-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "230 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-template-literals/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-template-literals",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "231 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-template-literals/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "232 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-template-literals/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "233 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-typeof-symbol/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-typeof-symbol",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "234 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-typeof-symbol/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "235 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-typeof-symbol/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "236 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-unicode-escapes/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-unicode-escapes",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "237 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-unicode-escapes/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "238 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-new-target/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-new-target",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "239 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-new-target/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "240 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-new-target/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "241 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-unicode-escapes/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "242 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/preset-modules/0.1.4",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/preset-modules",
+      "rawSpec": "^0.1.4"
+    }
+  },
+  "243 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-modules/0.1.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "244 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-modules/0.1.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "245 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-unicode-regex/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-unicode-regex",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "246 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-unicode-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "247 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-unicode-regex/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "248 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/types/7.14.1",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/types",
+      "rawSpec": "^7.14.1"
+    }
+  },
+  "249 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/types/7.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "250 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/types/7.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "251 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-polyfill-corejs2/0.2.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "babel-plugin-polyfill-corejs2",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "252 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-polyfill-corejs2/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "253 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/runtime/7.14.0",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "@babel/runtime",
+      "rawSpec": "^7.12.5"
+    }
+  },
+  "254 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-polyfill-corejs2/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "255 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-polyfill-corejs3/0.2.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "babel-plugin-polyfill-corejs3",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "256 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-polyfill-corejs3/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "257 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/aria-query/4.2.2",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "aria-query",
+      "rawSpec": "^4.2.2"
+    }
+  },
+  "258 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.1",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "chalk",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "259 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "260 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "261 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-polyfill-corejs3/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "262 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-polyfill-regenerator/0.2.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "babel-plugin-polyfill-regenerator",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "263 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-polyfill-regenerator/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "264 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-polyfill-regenerator/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "265 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-regenerator/7.13.15",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-regenerator",
+      "rawSpec": "^7.13.15"
+    }
+  },
+  "266 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-regenerator/7.13.15",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "267 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-regenerator/7.13.15",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "268 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/core-js-compat/3.12.1",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "core-js-compat",
+      "rawSpec": "^3.9.0"
+    }
+  },
+  "269 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/core-js-compat/3.12.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "270 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/core-js-compat/3.12.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "271 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/code-frame/7.12.13",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "@babel/code-frame",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "272 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "273 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.7.4",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/plugin-proposal-class-properties",
+      "rawSpec": "7.7.4"
+    }
+  },
+  "274 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.7.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "275 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/code-frame/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "276 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/aria-query/4.2.1",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "@types/aria-query",
+      "rawSpec": "^4.2.0"
+    }
+  },
+  "277 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/aria-query/4.2.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "278 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/semver/6.3.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "semver",
+      "rawSpec": "^6.3.0"
+    }
+  },
+  "279 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/6.3.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "280 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/semver/6.3.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "281 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/dom-accessibility-api/0.5.4",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "dom-accessibility-api",
+      "rawSpec": "^0.5.4"
+    }
+  },
+  "282 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "283 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lz-string/1.4.4",
+    "wanted": {
+      "dependentId": "/@testing-library/dom/7.31.0",
+      "name": "lz-string",
+      "rawSpec": "^1.4.4"
+    }
+  },
+  "284 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lz-string/1.4.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "285 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-import-meta/7.10.4",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/plugin-syntax-import-meta",
+      "rawSpec": "^7.10.1"
+    }
+  },
+  "286 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-import-meta/7.10.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "287 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-destructuring (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-destructuring"
+  },
+  "288 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-exponentiation-operator (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-exponentiation-operator"
+  },
+  "289 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-for-of (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-for-of"
+  },
+  "290 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-function-name (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-function-name"
+  },
+  "291 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/core/7.14.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/core",
+      "rawSpec": "^7.10.2"
+    }
+  },
+  "292 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "293 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.14.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "294 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.4",
+    "size": 59352,
+    "status": "started"
+  },
+  "295 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/dom-accessibility-api/0.5.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "296 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-syntax-jsx/7.12.13",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/plugin-syntax-jsx",
+      "rawSpec": "^7.10.1"
+    }
+  },
+  "297 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-jsx/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "298 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-regenerator/7.13.15",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/plugin-transform-regenerator",
+      "rawSpec": "^7.10.1"
+    }
+  },
+  "299 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/preset-env/7.14.1",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/preset-env",
+      "rawSpec": "^7.11.0"
+    }
+  },
+  "300 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.7.4",
+    "size": 1643,
+    "status": "started"
+  },
+  "301 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-proposal-class-properties/7.7.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "302 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-duplicate-keys failed, reason: socket hang up",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-duplicate-keys"
+  },
+  "303 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals failed, reason: socket hang up",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals"
+  },
+  "304 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/lz-string/1.4.4",
+    "size": 35293,
+    "status": "started"
+  },
+  "305 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lz-string/1.4.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "306 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-flow-strip-types/7.13.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/plugin-transform-flow-strip-types",
+      "rawSpec": "^7.10.1"
+    }
+  },
+  "307 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-flow-strip-types/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "308 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-import-meta/7.10.4",
+    "size": 1512,
+    "status": "started"
+  },
+  "309 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-import-meta/7.10.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "310 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-react-jsx/7.13.12",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/plugin-transform-react-jsx",
+      "rawSpec": "^7.10.1"
+    }
+  },
+  "311 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-react-jsx/7.13.12",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "312 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-flow-strip-types/7.13.0",
+    "size": 2615,
+    "status": "started"
+  },
+  "313 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-flow-strip-types/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "314 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/preset-react/7.13.13",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/preset-react",
+      "rawSpec": "^7.10.4"
+    }
+  },
+  "315 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-react/7.13.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "316 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-jsx/7.12.13",
+    "size": 1530,
+    "status": "started"
+  },
+  "317 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-syntax-jsx/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "318 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/plugin-babel/5.3.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@rollup/plugin-babel",
+      "rawSpec": "^5.0.3"
+    }
+  },
+  "319 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-babel/5.3.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "320 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-babel/5.3.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "321 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-react-jsx/7.13.12",
+    "size": 6165,
+    "status": "started"
+  },
+  "322 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-react-jsx/7.13.12",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "323 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/plugin-alias/3.1.2",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@rollup/plugin-alias",
+      "rawSpec": "^3.1.1"
+    }
+  },
+  "324 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-alias/3.1.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "325 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/preset-react/7.13.13",
+    "size": 4059,
+    "status": "started"
+  },
+  "326 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-react/7.13.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "327 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/plugin-commonjs/13.0.2",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@rollup/plugin-commonjs",
+      "rawSpec": "^13.0.0"
+    }
+  },
+  "328 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-commonjs/13.0.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "329 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/plugin-json/4.1.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@rollup/plugin-json",
+      "rawSpec": "^4.1.0"
+    }
+  },
+  "330 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-json/4.1.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "331 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@rollup/plugin-node-resolve/6.1.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@rollup/plugin-node-resolve",
+      "rawSpec": "^6.1.0"
+    }
+  },
+  "332 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-node-resolve/6.1.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "333 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/preset-flow/7.13.13",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "@babel/preset-flow",
+      "rawSpec": "^7.10.1"
+    }
+  },
+  "334 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-flow/7.13.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "335 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/asyncro/3.0.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "asyncro",
+      "rawSpec": "^3.0.0"
+    }
+  },
+  "336 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/asyncro/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "337 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-dotall-regex (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-dotall-regex"
+  },
+  "338 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@rollup/plugin-alias/3.1.2",
+    "size": 6161,
+    "status": "started"
+  },
+  "339 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-alias/3.1.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "340 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@rollup/plugin-commonjs/13.0.2",
+    "size": 77991,
+    "status": "started"
+  },
+  "341 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-commonjs/13.0.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "342 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@rollup/plugin-json/4.1.0",
+    "size": 4999,
+    "status": "started"
+  },
+  "343 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-json/4.1.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "344 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/preset-flow/7.13.13",
+    "size": 1883,
+    "status": "started"
+  },
+  "345 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/preset-flow/7.13.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "346 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/autoprefixer/9.8.6",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "autoprefixer",
+      "rawSpec": "^9.8.0"
+    }
+  },
+  "347 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/autoprefixer/9.8.6",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "348 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-computed-properties (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-computed-properties"
+  },
+  "349 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@rollup/plugin-node-resolve/6.1.0",
+    "size": 11776,
+    "status": "started"
+  },
+  "350 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@rollup/plugin-node-resolve/6.1.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "351 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-macros/2.8.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "babel-plugin-macros",
+      "rawSpec": "^2.8.0"
+    }
+  },
+  "352 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-macros/2.8.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "353 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/asyncro/3.0.0",
+    "size": 4460,
+    "status": "started"
+  },
+  "354 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/asyncro/3.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "355 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-transform-replace-expressions/0.2.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "babel-plugin-transform-replace-expressions",
+      "rawSpec": "^0.2.0"
+    }
+  },
+  "356 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-transform-replace-expressions/0.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "357 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-transform-async-to-promises/0.8.15",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "babel-plugin-transform-async-to-promises",
+      "rawSpec": "^0.8.15"
+    }
+  },
+  "358 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-transform-async-to-promises/0.8.15",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "359 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/brotli-size/4.0.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "brotli-size",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "360 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brotli-size/4.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "361 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/builtin-modules/3.2.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "builtin-modules",
+      "rawSpec": "^3.1.0"
+    }
+  },
+  "362 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/builtin-modules/3.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "363 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/builtin-modules/3.2.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "364 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/babel-plugin-macros/2.8.0",
+    "size": 11318,
+    "status": "started"
+  },
+  "365 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-macros/2.8.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "366 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/camelcase/5.3.1",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "camelcase",
+      "rawSpec": "^5.3.1"
+    }
+  },
+  "367 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelcase/5.3.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "368 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/camelcase/5.3.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "369 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/autoprefixer/9.8.6",
+    "size": 70605,
+    "status": "started"
+  },
+  "370 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/babel-plugin-transform-async-to-promises/0.8.15",
+    "size": 59729,
+    "status": "started"
+  },
+  "371 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-transform-async-to-promises/0.8.15",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "372 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/brotli-size/4.0.0",
+    "size": 13604,
+    "status": "started"
+  },
+  "373 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/brotli-size/4.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "374 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/es6-promisify/6.1.1",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "es6-promisify",
+      "rawSpec": "^6.1.1"
+    }
+  },
+  "375 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es6-promisify/6.1.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "376 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cssnano/4.1.11",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "cssnano",
+      "rawSpec": "^4.1.10"
+    }
+  },
+  "377 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cssnano/4.1.11",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "378 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "escape-string-regexp",
+      "rawSpec": "^4.0.0"
+    }
+  },
+  "379 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "380 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/filesize/6.3.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "filesize",
+      "rawSpec": "^6.1.0"
+    }
+  },
+  "381 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/filesize/6.3.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "382 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/gzip-size/5.1.1",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "gzip-size",
+      "rawSpec": "^5.1.1"
+    }
+  },
+  "383 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/gzip-size/5.1.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "384 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/es6-promisify/6.1.1",
+    "size": 3272,
+    "status": "started"
+  },
+  "385 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/es6-promisify/6.1.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "386 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/kleur/3.0.3",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "kleur",
+      "rawSpec": "^3.0.3"
+    }
+  },
+  "387 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/3.0.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "388 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/cssnano/4.1.11",
+    "size": 10532,
+    "status": "started"
+  },
+  "389 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cssnano/4.1.11",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "390 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/autoprefixer/9.8.6",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "391 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "size": 2017,
+    "status": "started"
+  },
+  "392 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/escape-string-regexp/4.0.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "393 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/filesize/6.3.0",
+    "size": 21439,
+    "status": "started"
+  },
+  "394 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/filesize/6.3.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "395 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/gzip-size/5.1.1",
+    "size": 2821,
+    "status": "started"
+  },
+  "396 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/gzip-size/5.1.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "397 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lodash.merge/4.6.2",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "lodash.merge",
+      "rawSpec": "^4.6.2"
+    }
+  },
+  "398 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.merge/4.6.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "399 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/kleur/3.0.3",
+    "size": 4292,
+    "status": "started"
+  },
+  "400 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/kleur/3.0.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "401 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/module-details-from-path/1.0.3",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "module-details-from-path",
+      "rawSpec": "^1.0.3"
+    }
+  },
+  "402 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/module-details-from-path/1.0.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "403 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/pretty-bytes/5.6.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "pretty-bytes",
+      "rawSpec": "^5.3.0"
+    }
+  },
+  "404 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pretty-bytes/5.6.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "405 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/pretty-bytes/5.6.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "406 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/lodash.merge/4.6.2",
+    "size": 13081,
+    "status": "started"
+  },
+  "407 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lodash.merge/4.6.2",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "408 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-exponentiation-operator/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-exponentiation-operator",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "409 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-exponentiation-operator/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "410 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-exponentiation-operator/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "411 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rollup-plugin-bundle-size/1.0.3",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "rollup-plugin-bundle-size",
+      "rawSpec": "^1.0.1"
+    }
+  },
+  "412 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup-plugin-bundle-size/1.0.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "413 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-for-of/7.13.0",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-for-of",
+      "rawSpec": "^7.13.0"
+    }
+  },
+  "414 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-for-of/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "415 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-for-of/7.13.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "416 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rollup-plugin-es3/1.1.0",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "rollup-plugin-es3",
+      "rawSpec": "^1.1.0"
+    }
+  },
+  "417 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup-plugin-es3/1.1.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "418 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/plugin-transform-function-name/7.12.13",
+    "wanted": {
+      "dependentId": "/@babel/preset-env/7.14.1",
+      "name": "@babel/plugin-transform-function-name",
+      "rawSpec": "^7.12.13"
+    }
+  },
+  "419 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-function-name/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "420 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/plugin-transform-function-name/7.12.13",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "421 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/module-details-from-path/1.0.3",
+    "size": 2194,
+    "status": "started"
+  },
+  "422 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/module-details-from-path/1.0.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "423 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-dotall-regex failed, reason: read ECONNRESET",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-dotall-regex"
+  },
+  "424 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rollup-plugin-terser/5.3.1",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "rollup-plugin-terser",
+      "rawSpec": "^5.3.0"
+    }
+  },
+  "425 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup-plugin-terser/5.3.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "426 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/rollup-plugin-bundle-size/1.0.3",
+    "size": 1877,
+    "status": "started"
+  },
+  "427 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup-plugin-bundle-size/1.0.3",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "428 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/rollup-plugin-es3/1.1.0",
+    "size": 2270,
+    "status": "started"
+  },
+  "429 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rollup-plugin-es3/1.1.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "430 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/1.14.1",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "tslib",
+      "rawSpec": "^1.13.0"
+    }
+  },
+  "431 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/1.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "432 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/1.14.1",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "found_in_store"
+  },
+  "433 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-computed-properties failed, reason: socket hang up",
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-computed-properties"
+  },
+  "434 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tiny-glob/0.2.8",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "tiny-glob",
+      "rawSpec": "^0.2.6"
+    }
+  },
+  "435 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tiny-glob/0.2.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "436 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sade/1.7.4",
+    "wanted": {
+      "dependentId": "/microbundle/0.12.4",
+      "name": "sade",
+      "rawSpec": "^1.7.3"
+    }
+  },
+  "437 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sade/1.7.4",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "438 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/source-map-resolve/0.6.0",
+    "wanted": {
+      "dependentId": "/css/3.0.0",
+      "name": "source-map-resolve",
+      "rawSpec": "^0.6.0"
+    }
+  },
+  "439 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/source-map-resolve/0.6.0",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "resolved"
+  },
+  "440 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/tiny-glob/0.2.8",
+    "size": 4177,
+    "status": "started"
+  },
+  "441 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tiny-glob/0.2.8",
+    "requester": "/home/rehhouari/Projects/web/alpinejs/alpine-i18n",
+    "status": "fetched"
+  },
+  "442 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/pretty-format (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/pretty-format"
+  },
+  "443 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/rollup-plugin-terser/-/rollup-plugin-terser-5.3.1.tgz failed, reason: read ETIMEDOUT",
+      "type": "system",
+      "errno": "ETIMEDOUT",
+      "code": "ETIMEDOUT",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/rollup-plugin-terser/-/rollup-plugin-terser-5.3.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/rollup-plugin-terser/-/rollup-plugin-terser-5.3.1.tgz"
+  },
+  "444 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/inherits failed, reason: read ETIMEDOUT",
+      "type": "system",
+      "errno": "ETIMEDOUT",
+      "code": "ETIMEDOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/inherits"
+  },
+  "445 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/source-map failed, reason: read ETIMEDOUT",
+      "type": "system",
+      "errno": "ETIMEDOUT",
+      "code": "ETIMEDOUT"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/source-map"
+  },
+  "446 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/@babel%2Fplugin-transform-destructuring (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-destructuring"
+  },
+  "447 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "request to https://registry.npmjs.org/@babel%2Fplugin-transform-computed-properties failed, reason: connect EHOSTUNREACH 104.16.21.35:443",
+      "type": "system",
+      "errno": "EHOSTUNREACH",
+      "code": "EHOSTUNREACH"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fplugin-transform-computed-properties"
+  },
+  "448 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "message": "request to https://registry.npmjs.org/source-map failed, reason: connect EHOSTUNREACH 104.16.21.35:443",
+      "type": "system",
+      "errno": "EHOSTUNREACH",
+      "code": "EHOSTUNREACH"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/source-map"
+  },
+  "449 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "Response timeout while trying to fetch https://registry.npmjs.org/rollup (over 60000ms)",
+      "type": "body-timeout"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/rollup"
+  },
+  "450 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "message": "request to https://registry.npmjs.org/pretty-format failed, reason: connect EHOSTUNREACH 104.16.21.35:443",
+      "type": "system",
+      "errno": "EHOSTUNREACH",
+      "code": "EHOSTUNREACH"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/pretty-format"
+  },
+  "451 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/@babel/preset-env/7.14.1",
+        "name": "@babel/preset-env",
+        "version": "7.14.1"
+      }
+    ],
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals: request to https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals failed, reason: connect EHOSTUNREACH 104.16.21.35:443",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "Error: GET https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals: request to https://registry.npmjs.org/@babel%2Fplugin-transform-member-expression-literals failed, reason: connect EHOSTUNREACH 104.16.21.35:443\n    at RetryOperation._fn (/usr/lib/node_modules/pnpm/dist/pnpm.cjs:62227:16)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:94:5)"
+    }
+  }
+}

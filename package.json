@@ -1,13 +1,13 @@
 {
-    "name": "{package-name}",
-    "description": "{package-description}",
+    "name": "alpinejs-i18n",
+    "description": "Internationalization (i18n) support for Alpine.js",
     "license": "MIT",
-    "author": "{author-name}",
+    "author": "Rafik El Hadi Houari",
     "repository": {
         "type": "git",
-        "url": "https://github.com/{repository}"
+        "url": "https://github.com/rehhouari/alpinejs-i18n"
     },
-    "source": "src/index.js",
+    "source": "src/index.ts",
     "main": "dist/index.js",
     "umd:main": "dist/index.umd.js",
     "module": "dist/index.module.js",
@@ -17,7 +17,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "alpinejs": "^2.8.0"
+        "alpinejs": "^2.8.2"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.11.0",
@@ -25,6 +25,7 @@
         "@testing-library/jest-dom": "^5.5.0",
         "jest": "^25.4.0",
         "jsdom-simulant": "^1.1.2",
-        "microbundle": "^0.12.3"
+        "microbundle": "^0.12.3",
+        "typescript": "^4.2.4"
     }
 }

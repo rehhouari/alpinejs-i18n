@@ -3,7 +3,7 @@ module.exports = {
         [
             '@babel/preset-env',
             {
-                targets: 'default',
+                targets: "defaults",
             },
         ],
     ],
