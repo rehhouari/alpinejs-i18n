@@ -59,7 +59,7 @@ In Javascript, after importing `alpinejs-i18n`:
 let locale = 'en';
 
 // the translation data
-// you can load/fetch these from files or keep them hardcoded them.
+// you can load/fetch these from files or keep them hardcoded.
 let messages = {
 {
 	en: {
