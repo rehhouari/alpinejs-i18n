@@ -27,14 +27,18 @@ declare const AlpineI18n: {
      * @param locale the default locale
      * @param messages the translation data
      */
-    create(locale: string, messages: object): void;
+    create(locale: string, messages: {
+        [name: string]: any;
+    }): void;
     /**
      * Get the localized version of a string
      * @param name the name of the message
      * @param vars optional variables to be passed to the string
      * @returns string
      */
-    t(name: string, vars: object): string;
+    t(name: string, vars?: {
+        [name: string]: any;
+    } | undefined): string;
     /**
      * Check if a locale exists in the message list
      * If it don't throw an Error. Does nothing otherwise.

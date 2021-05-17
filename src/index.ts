@@ -1,7 +1,7 @@
 import type { Alpine } from '@leanadmin/alpine-typescript';
 
 const AlpineI18n = {
-	version: '0.0.2',
+	version: '0.0.3',
 
 	/**
 	 * setter for the current locale
@@ -62,7 +62,7 @@ const AlpineI18n = {
 		 */
 		window.Alpine.addMagicProperty('t', ($el: HTMLElement) => {
 			this.subscribe($el);
-			return (name: string, vars: object) => {
+			return (name: string, vars?: { [name: string]: any }) => {
 				return this.t(name, vars);
 			};
 		});
@@ -73,7 +73,7 @@ const AlpineI18n = {
 	 * @param locale the default locale
 	 * @param messages the translation data
 	 */
-	create(locale: string, messages: object) {
+	create(locale: string, messages: { [name: string]: any }) {
 		this.messages = messages;
 		this.checkLocale(locale);
 		this.locale = locale;
@@ -85,7 +85,7 @@ const AlpineI18n = {
 	 * @param vars optional variables to be passed to the string
 	 * @returns string
 	 */
-	t(name: string, vars: object) {
+	t(name: string, vars?: {[name: string]: any}) {
 		let message: string = name
 			.split('.')
 			.reduce((o, i) => o[i], this.messages[this.locale]);
