@@ -1,3 +1,4 @@
+import type { Alpine } from '@leanadmin/alpine-typescript';
 declare const AlpineI18n: {
     version: string;
     /**
@@ -44,7 +45,7 @@ declare const AlpineI18n: {
      * Save an element to update it when locale change
      * @param el The element that uses the magic helper
      */
-    subscribe(el: never): void;
+    subscribe(el: HTMLElement): void;
     /**
      * Update components that use the magic helpers
      * taken from Spruce
@@ -53,7 +54,7 @@ declare const AlpineI18n: {
 };
 declare global {
     interface Window {
-        Alpine: any;
+        Alpine: Alpine;
         deferLoadingAlpine: any;
         AlpineI18n: typeof AlpineI18n;
     }

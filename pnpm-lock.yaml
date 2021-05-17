@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/preset-env': ^7.11.0
+  '@leanadmin/alpine-typescript': ^0.1.12
   '@testing-library/dom': ^7.2.2
   '@testing-library/jest-dom': ^5.5.0
   alpinejs: ^2.8.2
@@ -15,6 +16,7 @@ dependencies:
 
 devDependencies:
   '@babel/preset-env': 7.14.1
+  '@leanadmin/alpine-typescript': 0.1.12
   '@testing-library/dom': 7.31.0
   '@testing-library/jest-dom': 5.12.0
   jest: 25.5.4
@@ -2107,6 +2109,10 @@ packages:
       '@types/node': 15.0.2
       '@types/yargs': 15.0.13
       chalk: 4.1.1
+    dev: true
+
+  /@leanadmin/alpine-typescript/0.1.12:
+    resolution: {integrity: sha512-PjAFfNTVuEWgwoxbFLWRfcaC7AqkzbQVvLlSCjNFBe+wnnWd5H2/G2q9tsA996Rw7k/EiZsBVqGbj43LvXI2HA==}
     dev: true
 
   /@rollup/plugin-alias/3.1.2_rollup@1.32.1:

@@ -1,5 +1,7 @@
+import type { Alpine } from '@leanadmin/alpine-typescript';
+
 const AlpineI18n = {
-	version: '0.0.1',
+	version: '0.0.2',
 
 	/**
 	 * setter for the current locale
@@ -44,7 +46,7 @@ const AlpineI18n = {
 		 * 1) set the locale: $locale('code')
 		 * 2) get the locale $locale()
 		 **/
-		window.Alpine.addMagicProperty('locale', ($el: never) => {
+		window.Alpine.addMagicProperty('locale', ($el: HTMLElement) => {
 			this.subscribe($el);
 			return (locale: string | undefined) => {
 				if (!locale) return this.locale;
@@ -58,7 +60,7 @@ const AlpineI18n = {
 		 * $t('key')
 		 * $t('key', {var: val})
 		 */
-		window.Alpine.addMagicProperty('t', ($el: never) => {
+		window.Alpine.addMagicProperty('t', ($el: HTMLElement) => {
 			this.subscribe($el);
 			return (name: string, vars: object) => {
 				return this.t(name, vars);
@@ -115,9 +117,9 @@ const AlpineI18n = {
 	 * Save an element to update it when locale change
 	 * @param el The element that uses the magic helper
 	 */
-	subscribe(el: never) {
-		if (!this.subscribers.includes(el)) {
-			this.subscribers.push(el);
+	subscribe(el: HTMLElement) {
+		if (!this.subscribers.includes(<never>el)) {
+			this.subscribers.push(<never>el);
 		}
 	},
 
@@ -144,7 +146,7 @@ window.deferLoadingAlpine = function (callback: Function) {
 
 declare global {
 	interface Window {
-		Alpine: any;
+		Alpine: Alpine;
 		deferLoadingAlpine: any;
 		AlpineI18n: typeof AlpineI18n;
 	}

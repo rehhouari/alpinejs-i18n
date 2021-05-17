@@ -2,8 +2,8 @@
 
 Internationalization (i18n) support for Alpine.js
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18nlabel=version&sort=semver)](https://github.com/rehhouari/alpinejs-i18n/tree/0.0.1)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@0.0.1)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18nlabel=version&sort=semver)](https://github.com/rehhouari/alpinejs-i18n/tree/0.0.2)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@0.0.2)
 [![Downloads from Jsdelivr Github](https://img.shields.io/jsdelivr/gh/hm/rehhouari/alpinejs-i18nlogo=github&logoColor=)](https://www.jsdelivr.com/package/gh/rehhouari/alpinejs-i18n)
 [![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n&logo=npm)](https://www.jsdelivr.com/package/npm/alpinejs-i18n)
 [![npm](https://img.shields.io/npm/dm/alpinejs-i18n&label=npm&logo=npm&logoColor=37C8AB)](https://npmjs.com/package/alpinejs-i18n)
@@ -23,6 +23,7 @@ It provide two _magic helpers_ that you can use to localize strings in your Alpi
 -   Setting & getting [current locale](#locale-magic-helper) using a magic helper as well
 -   Automatically update affected components on locale change!
 -   Can be easily used [outside of Alpine.js components](#usage-from-javascript) (in Javascript)
+-   Typescript support.
 
 ## Installation
 
@@ -31,7 +32,7 @@ It provide two _magic helpers_ that you can use to localize strings in your Alpi
 Include the following `<script>` tag in the `<head>` of your document:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@v0.0.1/dist/index.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@v0.0.2/dist/index.umd.js"></script>
 ```
 
 > **Important**: This must be added **before** loading Alpine.js when using CDN links.
