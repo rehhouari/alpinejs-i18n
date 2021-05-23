@@ -2,8 +2,8 @@
 
 Internationalization (i18n) support for Alpine.js
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/0.0.3)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@0.0.3)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/1.0.0)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@1.0.0)
 [![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n)](https://www.jsdelivr.com/package/npm/alpinejs-i18n)
 [![npm](https://img.shields.io/npm/dm/alpinejs-i18n)](https://npmjs.com/package/alpinejs-i18n)
 [![Changelog](https://img.shields.io/badge/change-log-log)](/CHANGELOG.md)
@@ -13,9 +13,9 @@ Internationalization (i18n) support for Alpine.js
 This plugin allow you to easily use localization in your Alpine.js projects!
 It provide two _magic helpers_ that you can use to localize strings in your Alpine.js websites & apps.
 
-> **Development Version! Changes to the API may occur, which will be tracked in the [CHANGELOG.md](/CHANGELOG.md)**
-
 #### [Demo](https://alpinejs-i18n-example.vercel.app/)
+
+> You can implement loading locales from files. for example, [see my Alpine.js template _rapide_](https://github.com/rehhouari/rapide)
 
 ## Features
 
@@ -33,7 +33,7 @@ It provide two _magic helpers_ that you can use to localize strings in your Alpi
 Include the following `<script>` tag in the `<head>` of your document:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@v0.0.3/dist/index.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@v1.0.0/dist/index.umd.js"></script>
 ```
 
 > **Important**: This must be added **before** loading Alpine.js when using CDN links.
@@ -71,7 +71,7 @@ let messages = {
 		deep: {
 			one: 'one',
 			two: 'two',
-		}
+		},
 	},
 	ar: {
 		basic: 'زر',
@@ -79,9 +79,9 @@ let messages = {
 		deep: {
 			one: 'واحد',
 			two: 'اثنان',
-		}
+		},
 	},
-}
+};
 
 // finally, pass them to AlpineI18n:
 window.AlpineI18n.create(locale, messages);

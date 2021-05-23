@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/preset-env': ^7.11.0
-  '@leanadmin/alpine-typescript': ^0.1.12
+  '@leanadmin/alpine-typescript': ^0.1.22
   '@testing-library/dom': ^7.2.2
   '@testing-library/jest-dom': ^5.5.0
   alpinejs: ^2.8.2
@@ -16,7 +16,7 @@ dependencies:
 
 devDependencies:
   '@babel/preset-env': 7.14.1
-  '@leanadmin/alpine-typescript': 0.1.12
+  '@leanadmin/alpine-typescript': 0.1.22
   '@testing-library/dom': 7.31.0
   '@testing-library/jest-dom': 5.12.0
   jest: 25.5.4
@@ -2111,8 +2111,8 @@ packages:
       chalk: 4.1.1
     dev: true
 
-  /@leanadmin/alpine-typescript/0.1.12:
-    resolution: {integrity: sha512-PjAFfNTVuEWgwoxbFLWRfcaC7AqkzbQVvLlSCjNFBe+wnnWd5H2/G2q9tsA996Rw7k/EiZsBVqGbj43LvXI2HA==}
+  /@leanadmin/alpine-typescript/0.1.22:
+    resolution: {integrity: sha512-P5h8Or0pCa05a1eeAGTUYOUwfBs2vtZ/h+DsvtgaZkgRnQRbN5Qu2Itrh8HZWypTxWoKrO7mNuYO7S04wjlQrg==}
     dev: true
 
   /@rollup/plugin-alias/3.1.2_rollup@1.32.1:
@@ -2187,7 +2187,7 @@ packages:
     peerDependencies:
       rollup: ^1.20.0||^2.0.0
     dependencies:
-      '@types/estree': 0.0.39
+      '@types/estree': 1.0.09
       estree-walker: 1.0.1
       picomatch: 2.2.3
       rollup: 1.32.1
@@ -2260,7 +2260,7 @@ packages:
       '@babel/types': 7.14.1
     dev: true
 
-  /@types/estree/0.0.39:
+  /@types/estree/1.0.09:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
     dev: true
 

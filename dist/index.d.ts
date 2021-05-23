@@ -1,4 +1,4 @@
-import type { Alpine } from '@leanadmin/alpine-typescript';
+import { Alpine } from '@leanadmin/alpine-typescript';
 declare const AlpineI18n: {
     version: string;
     /**
@@ -59,7 +59,6 @@ declare const AlpineI18n: {
 declare global {
     interface Window {
         Alpine: Alpine;
-        deferLoadingAlpine: any;
         AlpineI18n: typeof AlpineI18n;
     }
 }

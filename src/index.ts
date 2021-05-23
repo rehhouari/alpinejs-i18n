@@ -1,7 +1,7 @@
-import type { Alpine } from '@leanadmin/alpine-typescript';
+import { Alpine } from '@leanadmin/alpine-typescript';
 
 const AlpineI18n = {
-	version: '0.0.3',
+	version: '1.0.0',
 
 	/**
 	 * setter for the current locale
@@ -129,7 +129,7 @@ const AlpineI18n = {
 	 */
 	updateSubscribers() {
 		this.subscribers.forEach((el: any) => {
-			el.__x?.updateElements(el);
+			el.__x.updateElements(el);
 		});
 	},
 };
@@ -147,7 +147,6 @@ window.deferLoadingAlpine = function (callback: Function) {
 declare global {
 	interface Window {
 		Alpine: Alpine;
-		deferLoadingAlpine: any;
 		AlpineI18n: typeof AlpineI18n;
 	}
 }
