@@ -129,28 +129,6 @@ A single `locale-change` is dispatched to `window` when the locale changes.
 
 ### Extra Tips:
 
-#### Conditionally setting the variables
-
-For example, if the locale is set to `ar` which is arabic, the following code:
-
-```html
-<span x-text="$t('var', {name: 'rafik})"></span>
-```
-
-will output: `'مرحبا, rafik`.
-
-Which if you're not familiar with RTL languages, it is wrong. Because the variable `name` is LTR, and the locale is RTL.
-
-To fix it you can easily do this:
-
-```html
-<span x-text="$t('var', {name: $locale() == 'ar'? 'رفيق':'rafik'})"></span>
-```
-
-Which will output: `مرحبا, رفيق`
-
-Much better!
-
 #### Changing writing direction based on locale
 
 ```html
@@ -211,6 +189,14 @@ This projects follow the [Semantic Versioning](https://semver.org/) guidelines.
 ## Disclaimer
 
 Community project by [@rehhouari](https://github.com/rehhouari), not affiliated with Alpine.js team.
+
+## [Sponsor](http://sponsor.rehhouari.eu.org) ♥️
+
+If you find this helpful and would like to support my work you can
+<a href="http://sponsor.rehhouari.eu.org" alt="donate crypto with coinbase">Donate with <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coinbase.svg" alt="Coinbase" width="80"/>
+</a>
+
+Any amount would be appreciated ^^
 
 ## Acknowledgments
 
