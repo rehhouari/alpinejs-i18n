@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpineI18n</title>
+    <script type="module">
+        import AlpineI18n from '/packages/main/dist/module.esm.js'
+
+        document.addEventListener('alpine:initializing', () => {
+            AlpineI18n(window.Alpine)
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+</head>
+
+<body>
+</body>
+
+</html>

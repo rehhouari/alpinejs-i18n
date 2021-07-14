@@ -1,33 +1,22 @@
 {
-    "name": "alpinejs-i18n",
-    "description": "Internationalization (i18n) support for Alpine.js",
-    "license": "MIT",
-    "author": "Rafik El Hadi Houari",
-    "version": "1.0.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rehhouari/alpinejs-i18n"
-    },
-    "source": "src/index.ts",
-    "main": "dist/index.js",
-    "umd:main": "dist/index.umd.js",
-    "module": "dist/index.module.js",
-    "scripts": {
-        "build": "microbundle",
-        "watch": "microbundle watch",
-        "test": "jest"
-    },
-    "dependencies": {
-        "alpinejs": "^2.8.2"
-    },
+    "workspaces": [
+        "packages/*"
+    ],
     "devDependencies": {
-        "@babel/preset-env": "^7.11.0",
-        "@leanadmin/alpine-typescript": "^0.1.22",
-        "@testing-library/dom": "^7.2.2",
-        "@testing-library/jest-dom": "^5.5.0",
-        "jest": "^25.4.0",
-        "jsdom-simulant": "^1.1.2",
-        "microbundle": "^0.12.3",
-        "typescript": "^4.2.4"
+        "brotli-size": "^4.0.0",
+        "esbuild": "^0.8.39",
+        "eslint": "^7.22.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "eslint-plugin-standard": "^4.1.0",
+        "lint-staged": "^10.5.4"
+    },
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "watch": "node ./scripts/build.js --watch",
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix"
     }
 }

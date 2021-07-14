@@ -14,6 +14,13 @@ Internationalization (i18n) support for Alpine.js
 This plugin allow you to easily use localization in your Alpine.js projects!
 It provide two _magic helpers_ that you can use to localize strings in your Alpine.js websites & apps.
 
+## Compatibility
+
+**important**
+version **1.0.0** is for Alpine v2
+Alpine v3 compatibility is being worked on
+
+
 #### [Demo](https://alpinejs-i18n-example.vercel.app/)
 
 > You can implement loading locales from files. for example, [see my Alpine.js template _rapide_](https://github.com/rehhouari/rapide)
@@ -85,7 +92,9 @@ let messages = {
 };
 
 // finally, pass them to AlpineI18n:
-window.AlpineI18n.create(locale, messages);
+document.addEventListener('alpine-i18n:ready', function () {
+    window.AlpineI18n.create(locale, messages);
+});
 ```
 
 ### 2 - Usage from inside Alpine Components
@@ -126,7 +135,8 @@ This will make the span's text "hello, rafik"!
 
 #### Events
 
-A single `locale-change` is dispatched to `window` when the locale changes.
+- `alpine-i18n:locale-change` is dispatched to `document` when the locale changes.
+- `alpine-i18n:ready` is dispatched to `document` when the plugin is ready.
 
 ### Extra Tips:
 
@@ -173,7 +183,7 @@ AlpineI18n.locale = 'ar';
 	// define the RTL locales you support
 	var rtlLocales = ['ar', 'fa'];
 	// listen to locale changes
-	window.addEventListener('locale-change', function () {
+	window.addEventListener('alpine-i18n:locale-change', function () {
 		if (rtlLocales.includes(window.AlpineI18n.locale)) {
 			document.body.setAttribute('dir', 'rtl');
 		} else {

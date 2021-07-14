@@ -1,0 +1,6 @@
+{
+    "name": "alpinejs-i18n",
+    "description": "Internationalization (i18n) support for Alpine.js",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js"
+}

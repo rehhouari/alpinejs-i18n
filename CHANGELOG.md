@@ -8,6 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## Deprecated
+
+-   Alpine v2 in favor of Alpine v3, use v1.0.0 for Alpine v2 support
+
+## Changed
+
+-   `locale-change` event to `alpine-i18n:locale-change` and make it dispatch to document instead of window.
+
+## Added
+
+-   `alpine-i18n:read` event for when the plugin is loaded
+
 ## [1.0.0] - 2021-05-23
 
 -	First stable version! The API wont have any breaking changes till next version.
