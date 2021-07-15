@@ -8,7 +8,7 @@ const AlpineI18n = {
 	 * setter for the current locale
 	 */
 	set locale(name) {
-		//this.checkLocale(name)
+		this.checkLocale(name)
 		this.currentLocale = name;
 		document.dispatchEvent(localeChange);
 	},
@@ -50,6 +50,28 @@ const AlpineI18n = {
             `Alpine I18n: The locale ${this.locale} does not exist.`,
             );
         }
+    },
+
+    /**
+     * Get the localized version of a string
+     * @param name the name of the message
+     * @param vars optional variables to be passed to the string
+     * @returns string
+     */
+    t(name: string, vars?: {[name: string]: any}) {
+        let message: string = name
+            .split('.')
+            .reduce((o, i) => o[i], this.messages[this.locale]);
+        for (const key in vars) {
+            if (Object.prototype.hasOwnProperty.call(vars, key)) {
+                //@ts-ignore
+                const val: string = vars[key];
+                let regexp = new RegExp('{s*(' + key + ')s*}', 'g');
+                //@ts-ignore
+                message = message.replaceAll(regexp, val);
+            }
+        }
+        return message;
     }
 };
 
@@ -59,38 +81,15 @@ export default function (Alpine: any) {
     Alpine.magic('locale', (el: HTMLElement) => {
         return (locale: string | undefined) => {
             if (!locale) return window.AlpineI18n.locale;
-            window.AlpineI18n.checkLocale(locale);
             window.AlpineI18n.locale = locale;
         };
     })
 
     Alpine.magic('t', (el: HTMLElement) => {
         return (name: string, vars?: { [name: string]: any }) => {
-            return t(name, vars);
+            return window.AlpineI18n.t(name, vars);
         };
     })
-}
-
-/**
- * Get the localized version of a string
- * @param name the name of the message
- * @param vars optional variables to be passed to the string
- * @returns string
- */
-const t = (name: string, vars?: {[name: string]: any}) => {
-    let message: string = name
-        .split('.')
-        .reduce((o, i) => o[i], window.AlpineI18n.messages[window.AlpineI18n.locale]);
-    for (const key in vars) {
-        if (Object.prototype.hasOwnProperty.call(vars, key)) {
-            //@ts-ignore
-            const val: string = vars[key];
-            let regexp = new RegExp('{s*(' + key + ')s*}', 'g');
-            //@ts-ignore
-            message = message.replaceAll(regexp, val);
-        }
-    }
-    return message;
 }
 
 declare global {

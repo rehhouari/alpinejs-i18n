@@ -5,6 +5,7 @@
   var AlpineI18n = {
     version: "2.0.0",
     set locale(name) {
+      this.checkLocale(name);
       this.currentLocale = name;
       document.dispatchEvent(localeChange);
     },
@@ -22,6 +23,17 @@
       if (!Object.keys(this.messages).includes(locale)) {
         throw new Error(`Alpine I18n: The locale ${this.locale} does not exist.`);
       }
+    },
+    t(name, vars) {
+      let message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
+      for (const key in vars) {
+        if (Object.prototype.hasOwnProperty.call(vars, key)) {
+          const val = vars[key];
+          let regexp = new RegExp("{s*(" + key + ")s*}", "g");
+          message = message.replaceAll(regexp, val);
+        }
+      }
+      return message;
     }
   };
   function src_default(Alpine) {
@@ -31,27 +43,15 @@
       return (locale) => {
         if (!locale)
           return window.AlpineI18n.locale;
-        window.AlpineI18n.checkLocale(locale);
         window.AlpineI18n.locale = locale;
       };
     });
     Alpine.magic("t", (el) => {
       return (name, vars) => {
-        return t(name, vars);
+        return window.AlpineI18n.t(name, vars);
       };
     });
   }
-  var t = (name, vars) => {
-    let message = name.split(".").reduce((o, i) => o[i], window.AlpineI18n.messages[window.AlpineI18n.locale]);
-    for (const key in vars) {
-      if (Object.prototype.hasOwnProperty.call(vars, key)) {
-        const val = vars[key];
-        let regexp = new RegExp("{s*(" + key + ")s*}", "g");
-        message = message.replaceAll(regexp, val);
-      }
-    }
-    return message;
-  };
 
   // packages/main/builds/cdn.js
   document.addEventListener("alpine:initializing", () => {

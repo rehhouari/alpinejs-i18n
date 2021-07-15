@@ -2,8 +2,8 @@
 
 Internationalization (i18n) support for Alpine.js
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/1.0.0)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@1.0.0)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/2.0.0)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@2.0.0)
 [![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n)](https://www.jsdelivr.com/package/npm/alpinejs-i18n)
 [![npm](https://img.shields.io/npm/dm/alpinejs-i18n)](https://npmjs.com/package/alpinejs-i18n)
 [![Changelog](https://img.shields.io/badge/change-log-log)](/CHANGELOG.md)
@@ -16,9 +16,9 @@ It provide two _magic helpers_ that you can use to localize strings in your Alpi
 
 ## Compatibility
 
-Version **2.x** Alpine v3
+Version **^2.x** for Alpine v3.
 
-Version **1.0.0** Alpine v2
+Version **1.0.0** for Alpine v2.
 
 #### [Demo](https://alpinejs-i18n-example.vercel.app/)
 
@@ -35,16 +35,6 @@ Version **1.0.0** Alpine v2
 
 ## Installation
 
-### CDN
-
-Include the following `<script>` tag in the `<head>` of your document:
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@v1.0.0/dist/index.umd.js"></script>
-```
-
-> **Important**: This must be added **before** loading Alpine.js when using CDN links.
-
 ### NPM
 
 ```
@@ -52,8 +42,25 @@ npm install alpinejs-i18n
 ```
 
 ```
-import 'alpinejs-i18n';
-import 'alpinejs';
+import AlpineI18n from 'alpinejs-i18n';
+import Alpine from 'alpinejs';
+
+Alpine.plugin(AlpineI18n)
+Alpine.start()
+```
+
+### `<script type="module">`
+
+Add the following `<script>` to the `<head>` of your document **before** including Alpine:
+
+```html
+<script type="module">
+    import AlpineI18n from 'https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/module.esm.js'
+
+    document.addEventListener('alpine:init', () => {
+        window.Alpine.plugin(AlpineI18n)
+    })
+</script>
 ```
 
 ## Usage
@@ -95,6 +102,8 @@ document.addEventListener('alpine-i18n:ready', function () {
     window.AlpineI18n.create(locale, messages);
 });
 ```
+
+**Note**: when using NPM method you wont need wrapping the create() line in an event listener.
 
 ### 2 - Usage from inside Alpine Components
 
@@ -210,12 +219,7 @@ Any amount would be appreciated ^^
 
 ## Acknowledgments
 
--   [@KevinBatdorf](https://twitter.com/KevinBatdorf) for the early feedback and suggestions.
-
-## Credits
-
--   `subscribe` & `updateSubscribers` methods are taken from [Ryan Chandler's](https://github.com/ryangjchandler) [Spruce](https://github.com/ryangjchandler/spruce).
--   -   Copyright (c) 2021 Ryan Chandler. MIT License.
+-   [@KevinBatdorf](https://twitter.com/KevinBatdorf) for the constant feedback and help.
 
 ## License
 
