@@ -19,16 +19,12 @@ var AlpineI18n = {
   set locale(name) {
     this.currentLocale = name;
     document.dispatchEvent(localeChange);
-    this.updateSubscribers();
   },
   get locale() {
     return this.currentLocale;
   },
   currentLocale: "",
   messages: {},
-  subscribers: [],
-  updateSubscribers() {
-  },
   create(locale, messages) {
     this.messages = messages;
     this.checkLocale(locale);
@@ -41,10 +37,9 @@ var AlpineI18n = {
   }
 };
 function src_default(Alpine) {
-  window.AlpineI18n = AlpineI18n;
+  window.AlpineI18n = Alpine.reactive(AlpineI18n);
   document.dispatchEvent(i18nReady);
   Alpine.magic("locale", (el) => {
-    subscribe(Alpine.closestRoot(el));
     return (locale) => {
       if (!locale)
         return window.AlpineI18n.locale;
@@ -53,7 +48,6 @@ function src_default(Alpine) {
     };
   });
   Alpine.magic("t", (el) => {
-    subscribe(Alpine.closestRoot(el));
     return (name, vars) => {
       return t(name, vars);
     };
@@ -69,11 +63,6 @@ var t = (name, vars) => {
     }
   }
   return message;
-};
-var subscribe = (el) => {
-  if (!window.AlpineI18n.subscribers.includes(el)) {
-    window.AlpineI18n.subscribers.push(el);
-  }
 };
 
 // packages/main/builds/module.js

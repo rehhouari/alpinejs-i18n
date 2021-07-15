@@ -11,7 +11,6 @@ const AlpineI18n = {
 		//this.checkLocale(name)
 		this.currentLocale = name;
 		document.dispatchEvent(localeChange);
-		this.updateSubscribers();
 	},
 
 	/**
@@ -29,20 +28,6 @@ const AlpineI18n = {
 	 */
 	messages: <any>{},
 
-	/**
-	 * components that use the magic helpers
-	 */
-	subscribers: [],
-
-	/**
-	 * Update components that use the magic helpers
-	 * taken from Spruce
-	 */
-    updateSubscribers() {
-		// this.subscribers.forEach((el: any) => {
-		// 	el.__x.updateElements(el);
-		// });
-	},
     /**
      * Set up i18n's default locale and data.
      * @param locale the default locale
@@ -69,10 +54,9 @@ const AlpineI18n = {
 };
 
 export default function (Alpine: any) {
-    window.AlpineI18n = AlpineI18n;
+    window.AlpineI18n = Alpine.reactive(AlpineI18n);
     document.dispatchEvent(i18nReady);
     Alpine.magic('locale', (el: HTMLElement) => {
-        subscribe(Alpine.closestRoot(el));
         return (locale: string | undefined) => {
             if (!locale) return window.AlpineI18n.locale;
             window.AlpineI18n.checkLocale(locale);
@@ -81,7 +65,6 @@ export default function (Alpine: any) {
     })
 
     Alpine.magic('t', (el: HTMLElement) => {
-        subscribe(Alpine.closestRoot(el));
         return (name: string, vars?: { [name: string]: any }) => {
             return t(name, vars);
         };
@@ -108,16 +91,6 @@ const t = (name: string, vars?: {[name: string]: any}) => {
         }
     }
     return message;
-}
-
-/**
- * Save an element to update it when locale change
- * @param el The element that uses the magic helper
- */
-const subscribe = (el: HTMLElement) => {
-    if (!window.AlpineI18n.subscribers.includes(<never>el)) {
-        window.AlpineI18n.subscribers.push(<never>el);
-    }
 }
 
 declare global {

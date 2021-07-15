@@ -16,10 +16,9 @@ It provide two _magic helpers_ that you can use to localize strings in your Alpi
 
 ## Compatibility
 
-**important**
-version **1.0.0** is for Alpine v2
-Alpine v3 compatibility is being worked on
+Version **2.x** Alpine v3
 
+Version **1.0.0** Alpine v2
 
 #### [Demo](https://alpinejs-i18n-example.vercel.app/)
 
