@@ -2,7 +2,7 @@ const localeChange = new Event('alpine-i18n:locale-change')
 const i18nReady = new Event('alpine-i18n:ready')
 
 const AlpineI18n = {
-	version: '2.1.1',
+	version: '2.2.0',
 
 	/**
 	 * setter for the current locale
@@ -61,20 +61,14 @@ const AlpineI18n = {
 	 * @returns string
 	 */
 	t(name: string, vars?: { [name: string]: any }) {
-		let message: string = name
+		let message: string = '';
 		try {
-			 message = name
-				.split('.')
-				.reduce((o, i) => o[i], this.messages[this.locale]);
-		} catch (error) {
-			console.warn('AlpineI18n: key ' + name + ' not found. Using fallbackLocale.')
-			if (this.fallbackLocale.length) {
-				message = name
-					.split('.')
-					.reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
-			} else {
-				return name
-			}
+			message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
+		} catch {}
+		if (!message && this.fallbackLocale.length) {
+			message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
+		} else if (!message) {
+			return name;
 		}
 
 		for (const key in vars) {
