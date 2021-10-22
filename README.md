@@ -152,7 +152,7 @@ to set a fallback locale for partially-translated values:
 
 ```js
 document.addEventListener('alpine-i18n:ready', function () {	
-	window.AlpineI18n.fallbackLocale = 'en';
+    window.AlpineI18n.fallbackLocale = 'en';
 }
 ```
 
