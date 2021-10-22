@@ -26,12 +26,13 @@
       }
     },
     t(name, vars) {
+      let message = name;
       try {
-        let message2 = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
+        message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
       } catch (error) {
         console.warn("AlpineI18n: key " + name + " not found. Using fallbackLocale.");
         if (this.fallbackLocale.length) {
-          let message2 = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
+          message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
         } else {
           return name;
         }
