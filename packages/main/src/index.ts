@@ -64,6 +64,7 @@ const AlpineI18n = {
 		let message: string = '';
 		try {
 			message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
+			if (!message) throw '';
 		} catch {}
 		if (!message && this.fallbackLocale.length) {
 			message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);

@@ -3,7 +3,7 @@
     "description": "Internationalization (i18n) support for Alpine.js",
     "license": "MIT",
     "author": "Rafik El Hadi Houari",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/rehhouari/alpinejs-i18n"
