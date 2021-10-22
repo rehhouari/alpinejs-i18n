@@ -2,7 +2,7 @@
 var localeChange = new Event("alpine-i18n:locale-change");
 var i18nReady = new Event("alpine-i18n:ready");
 var AlpineI18n = {
-  version: "2.0.0",
+  version: "2.1.0",
   set locale(name) {
     this.checkLocale(name);
     this.currentLocale = name;
@@ -13,6 +13,7 @@ var AlpineI18n = {
   },
   currentLocale: "",
   messages: {},
+  fallbackLocale: "",
   create(locale, messages) {
     this.messages = messages;
     this.checkLocale(locale);
@@ -25,6 +26,9 @@ var AlpineI18n = {
   },
   t(name, vars) {
     let message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
+    if (!message && this.fallbackLocale.length) {
+      message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
+    }
     for (const key in vars) {
       if (Object.prototype.hasOwnProperty.call(vars, key)) {
         const val = vars[key];

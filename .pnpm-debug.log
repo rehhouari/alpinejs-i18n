@@ -2,49 +2,17 @@
   "0 debug pnpm:scope": {
     "selected": 1
   },
-  "1 debug pnpm:package-manifest": {
-    "initial": {
-      "private": true,
-      "workspaces": [
-        "packages/*"
-      ],
-      "devDependencies": {
-        "brotli-size": "^4.0.0",
-        "esbuild": "^0.8.39",
-        "eslint": "^7.22.0",
-        "eslint-config-standard": "^16.0.2",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^4.3.1",
-        "eslint-plugin-standard": "^4.1.0",
-        "lint-staged": "^10.5.4"
-      },
-      "scripts": {
-        "build": "node ./scripts/build.js",
-        "watch": "node ./scripts/build.js --watch",
-        "lint": "eslint .",
-        "lint-fix": "eslint . --fix"
-      }
-    },
-    "prefix": "/root/projects/toolkit"
-  },
-  "2 debug pnpm:context": {
-    "currentLockfileExists": false,
-    "storeDir": "/mnt/sdc1/files/pnpm-store/v3",
-    "virtualStoreDir": "/root/projects/toolkit/node_modules/.pnpm"
-  },
-  "3 debug pnpm:stage": {
-    "prefix": "/root/projects/toolkit",
-    "stage": "resolution_started"
-  },
-  "4 error pnpm": {
-    "code": "ERR_PNPM_NO_OFFLINE_META",
-    "pkgsStack": [],
+  "1 error pnpm": {
+    "errno": 1,
+    "code": "ELIFECYCLE",
+    "pkgid": "@",
+    "stage": "build",
+    "script": "node ./scripts/build.js",
     "err": {
       "name": "Error",
-      "message": "Failed to resolve brotli-size@>=4.0.0 <5.0.0-0 in package mirror /root/.cache/pnpm/metadata/registry.npmjs.org/brotli-size.json",
-      "code": "ERR_PNPM_NO_OFFLINE_META",
-      "stack": "Error: Failed to resolve brotli-size@>=4.0.0 <5.0.0-0 in package mirror /root/.cache/pnpm/metadata/registry.npmjs.org/brotli-size.json\n    at exports2.default (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.10.0/node_modules/pnpm/dist/pnpm.cjs:78789:17)\n    at async resolveNpm (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.10.0/node_modules/pnpm/dist/pnpm.cjs:79242:22)\n    at async Object.resolve (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.10.0/node_modules/pnpm/dist/pnpm.cjs:79430:34)\n    at async run (/usr/pnpm-global/5/node_modules/.pnpm/pnpm@6.10.0/node_modules/pnpm/dist/pnpm.cjs:65515:23)"
+      "message": "@ build: `node ./scripts/build.js`\nExit status 1",
+      "code": "ELIFECYCLE",
+      "stack": "Error: @ build: `node ./scripts/build.js`\nExit status 1\n    at EventEmitter.<anonymous> (/home/rehhouari/.local/lib/node_modules/pnpm/dist/pnpm.cjs:103921:20)\n    at EventEmitter.emit (node:events:378:20)\n    at ChildProcess.<anonymous> (/home/rehhouari/.local/lib/node_modules/pnpm/dist/pnpm.cjs:92227:18)\n    at ChildProcess.emit (node:events:378:20)\n    at maybeClose (node:internal/child_process:1067:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)"
     }
   }
 }
