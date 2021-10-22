@@ -98,7 +98,7 @@ let messages = {
 };
 
 // finally, pass them to AlpineI18n:
-document.addEventListener('alpine-i18n:ready', function () {
+document.addEventListener('alpine-i18n:ready', function () {	
     window.AlpineI18n.create(locale, messages);
 });
 ```
@@ -145,6 +145,16 @@ This will make the span's text "hello, rafik"!
 
 - `alpine-i18n:locale-change` is dispatched to `document` when the locale changes.
 - `alpine-i18n:ready` is dispatched to `document` when the plugin is ready.
+
+#### Fallback Locale
+
+to set a fallback locale for partially-translated values:
+
+```js
+document.addEventListener('alpine-i18n:ready', function () {	
+	window.AlpineI18n.fallbackLocale = 'en';
+}
+```
 
 ### Extra Tips:
 
