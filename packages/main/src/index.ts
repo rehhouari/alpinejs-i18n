@@ -28,68 +28,75 @@ const AlpineI18n = {
 	 */
 	messages: <any>{},
 
-    /**
-     * Set up i18n's default locale and data.
-     * @param locale the default locale
-     * @param messages the translation data
-     */
-    create (locale: string, messages: { [name: string]: any }) {
-        this.messages = messages;
-        this.checkLocale(locale);
-        this.locale = locale;
-    },
+	fallbackLocale: '',
 
-    /**
-     * Check if a locale exists in the message list
-     * If it don't throw an Error. Does nothing otherwise.
-     * @param locale locale to check
-     */
-    checkLocale (locale: string) {
-        if (!Object.keys(this.messages).includes(locale)) {
-            throw new Error(
-            `Alpine I18n: The locale ${this.locale} does not exist.`,
-            );
-        }
-    },
+	/**
+	 * Set up i18n's default locale and data.
+	 * @param locale the default locale
+	 * @param messages the translation data
+	 */
+	create(locale: string, messages: { [name: string]: any }) {
+		this.messages = messages;
+		this.checkLocale(locale);
+		this.locale = locale;
+	},
 
-    /**
-     * Get the localized version of a string
-     * @param name the name of the message
-     * @param vars optional variables to be passed to the string
-     * @returns string
-     */
-    t(name: string, vars?: {[name: string]: any}) {
-        let message: string = name
-            .split('.')
-            .reduce((o, i) => o[i], this.messages[this.locale]);
-        for (const key in vars) {
-            if (Object.prototype.hasOwnProperty.call(vars, key)) {
-                //@ts-ignore
-                const val: string = vars[key];
-                let regexp = new RegExp('{s*(' + key + ')s*}', 'g');
-                //@ts-ignore
-                message = message.replaceAll(regexp, val);
-            }
-        }
-        return message;
-    }
+	/**
+	 * Check if a locale exists in the message list
+	 * If it don't throw an Error. Does nothing otherwise.
+	 * @param locale locale to check
+	 */
+	checkLocale(locale: string) {
+		if (!Object.keys(this.messages).includes(locale)) {
+			throw new Error(
+				`Alpine I18n: The locale ${this.locale} does not exist.`,
+			);
+		}
+	},
+
+	/**
+	 * Get the localized version of a string
+	 * @param name the name of the message
+	 * @param vars optional variables to be passed to the string
+	 * @returns string
+	 */
+	t(name: string, vars?: { [name: string]: any }) {
+		let message: string = name
+			.split('.')
+			.reduce((o, i) => o[i], this.messages[this.locale]);
+		if (!message && this.fallbackLocale.length) {
+			message = name
+				.split('.')
+				.reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
+		}
+		for (const key in vars) {
+			if (Object.prototype.hasOwnProperty.call(vars, key)) {
+				//@ts-ignore
+				const val: string = vars[key];
+				let regexp = new RegExp('{s*(' + key + ')s*}', 'g');
+				//@ts-ignore
+				message = message.replaceAll(regexp, val);
+			}
+		}
+		return message;
+	}
 };
 
 export default function (Alpine: any) {
-    window.AlpineI18n = Alpine.reactive(AlpineI18n);
-    document.dispatchEvent(i18nReady);
-    Alpine.magic('locale', (el: HTMLElement) => {
-        return (locale: string | undefined) => {
-            if (!locale) return window.AlpineI18n.locale;
-            window.AlpineI18n.locale = locale;
-        };
-    })
+	window.AlpineI18n = Alpine.reactive(AlpineI18n);
+	document.dispatchEvent(i18nReady);
+	Alpine.magic('locale', (el: HTMLElement) => {
+		return (locale: string | undefined) => {
+			if (!locale) return window.AlpineI18n.locale;
+			window.AlpineI18n.locale = locale;
+		};
+	})
 
-    Alpine.magic('t', (el: HTMLElement) => {
-        return (name: string, vars?: { [name: string]: any }) => {
-            return window.AlpineI18n.t(name, vars);
-        };
-    })
+	Alpine.magic('t', (el: HTMLElement) => {
+		return (name: string, vars?: { [name: string]: any }) => {
+			return window.AlpineI18n.t(name, vars);
+		};
+	})
 }
 
 declare global {
