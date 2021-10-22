@@ -72,7 +72,7 @@ const AlpineI18n = {
 					.split('.')
 					.reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
 			} else {
-				let message = name
+				return name
 			}
 		}
 
