@@ -61,14 +61,15 @@ const AlpineI18n = {
 	 * @returns string
 	 */
 	t(name: string, vars?: { [name: string]: any }) {
+		let message: string = name
 		try {
-			let message: string = name
+			 message = name
 				.split('.')
 				.reduce((o, i) => o[i], this.messages[this.locale]);
 		} catch (error) {
 			console.warn('AlpineI18n: key ' + name + ' not found. Using fallbackLocale.')
 			if (this.fallbackLocale.length) {
-				let message = name
+				message = name
 					.split('.')
 					.reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
 			} else {
