@@ -15,7 +15,7 @@ __export(exports, {
 var localeChange = new Event("alpine-i18n:locale-change");
 var i18nReady = new Event("alpine-i18n:ready");
 var AlpineI18n = {
-  version: "2.1.0",
+  version: "2.1.1",
   set locale(name) {
     this.checkLocale(name);
     this.currentLocale = name;
@@ -38,9 +38,13 @@ var AlpineI18n = {
     }
   },
   t(name, vars) {
-    let message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
-    if (!message && this.fallbackLocale.length) {
-      message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
+    try {
+      let message2 = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
+    } catch (error) {
+      console.warn("AlpineI18n: key " + name + " not found. Using fallbackLocale.");
+      if (!message && this.fallbackLocale.length) {
+        message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
+      }
     }
     for (const key in vars) {
       if (Object.prototype.hasOwnProperty.call(vars, key)) {
