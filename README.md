@@ -219,14 +219,6 @@ This projects follow the [Semantic Versioning](https://semver.org/) guidelines.
 
 Community project by [@rehhouari](https://github.com/rehhouari), not affiliated with Alpine.js team.
 
-## [Sponsor](http://sponsor.rehhouari.eu.org) ♥️
-
-If you find this helpful and would like to support my work you can
-<a href="http://sponsor.rehhouari.eu.org" alt="donate crypto with coinbase">Donate with <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Coinbase.svg" alt="Coinbase" width="80"/>
-</a>
-
-Any amount would be appreciated ^^
-
 ## Acknowledgments
 
 -   [@KevinBatdorf](https://twitter.com/KevinBatdorf) for the constant feedback and help.
