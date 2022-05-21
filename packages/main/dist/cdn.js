@@ -15,10 +15,12 @@
     currentLocale: "",
     messages: {},
     fallbackLocale: "",
-    create(locale, messages) {
+    options: {},
+    create(locale, messages, options) {
       this.messages = messages;
       this.checkLocale(locale);
       this.locale = locale;
+      this.options = options;
     },
     checkLocale(locale) {
       if (!Object.keys(this.messages).includes(locale)) {
@@ -36,7 +38,7 @@
       if (!message && this.fallbackLocale.length) {
         message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
       } else if (!message) {
-        return name;
+        return this.options?.debug ? `???${name}` : name;
       }
       for (const key in vars) {
         if (Object.prototype.hasOwnProperty.call(vars, key)) {
@@ -45,7 +47,7 @@
           message = message.replaceAll(regexp, val);
         }
       }
-      return message;
+      return this.options?.debug ? `[${message}]` : message;
     }
   };
   function src_default(Alpine) {
