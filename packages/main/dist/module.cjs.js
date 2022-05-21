@@ -27,10 +27,12 @@ var AlpineI18n = {
   currentLocale: "",
   messages: {},
   fallbackLocale: "",
-  create(locale, messages) {
+  options: {},
+  create(locale, messages, options) {
     this.messages = messages;
     this.checkLocale(locale);
     this.locale = locale;
+    this.options = options;
   },
   checkLocale(locale) {
     if (!Object.keys(this.messages).includes(locale)) {
@@ -38,6 +40,7 @@ var AlpineI18n = {
     }
   },
   t(name, vars) {
+    var _a, _b;
     let message = "";
     try {
       message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
@@ -48,7 +51,7 @@ var AlpineI18n = {
     if (!message && this.fallbackLocale.length) {
       message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
     } else if (!message) {
-      return name;
+      return ((_a = this.options) == null ? void 0 : _a.debug) ? `???${name}` : name;
     }
     for (const key in vars) {
       if (Object.prototype.hasOwnProperty.call(vars, key)) {
@@ -57,7 +60,7 @@ var AlpineI18n = {
         message = message.replaceAll(regexp, val);
       }
     }
-    return message;
+    return ((_b = this.options) == null ? void 0 : _b.debug) ? `[${message}]` : message;
   }
 };
 function src_default(Alpine) {

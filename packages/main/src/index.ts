@@ -30,15 +30,19 @@ const AlpineI18n = {
 
 	fallbackLocale: '',
 
+    options: <any>{},
+
 	/**
 	 * Set up i18n's default locale and data.
 	 * @param locale the default locale
 	 * @param messages the translation data
+     * @param options optional settings
 	 */
-	create(locale: string, messages: { [name: string]: any }) {
+	create(locale: string, messages: { [name: string]: any }, options: { debug: boolean }) {
 		this.messages = messages;
 		this.checkLocale(locale);
 		this.locale = locale;
+        this.options = options;
 	},
 
 	/**
@@ -69,7 +73,7 @@ const AlpineI18n = {
 		if (!message && this.fallbackLocale.length) {
 			message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
 		} else if (!message) {
-			return name;
+			return (this.options?.debug) ? `???${name}` : name;
 		}
 
 		for (const key in vars) {
@@ -81,7 +85,7 @@ const AlpineI18n = {
 				message = message.replaceAll(regexp, val);
 			}
 		}
-		return message;
+		return (this.options?.debug) ? `[${message}]` : message;
 	}
 };
 
