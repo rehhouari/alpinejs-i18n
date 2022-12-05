@@ -103,7 +103,7 @@ document.addEventListener('alpine-i18n:ready', function () {
 });
 ```
 
-**Note**: when using NPM method you wont need wrapping the create() line in an event listener.
+**Note**: when using NPM method you wont need to wrap the `create()` line in an event listener.
 
 ### 2 - Usage from inside Alpine Components
 
