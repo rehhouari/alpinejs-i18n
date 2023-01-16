@@ -35,28 +35,39 @@ Version **1.0.0** for Alpine v2.
 
 ## Installation
 
+### CDN
+```html
+<script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/cdn.min.js"></script>
+```
 ### NPM
 
 ```
 npm install alpinejs-i18n
 ```
 
-```
+```js
 import AlpineI18n from 'alpinejs-i18n';
 import Alpine from 'alpinejs';
 
+document.addEventListener('alpine-i18n:ready', function () {
+    // ... scroll to Usage to see where locale and messages came from
+    window.AlpineI18n.create(locale, messages);
+})
 Alpine.plugin(AlpineI18n)
 Alpine.start()
 ```
 
-### `<script type="module">`
+### ES6 Module
 
 Add the following `<script>` to the `<head>` of your document **before** including Alpine:
 
 ```html
 <script type="module">
-    import AlpineI18n from 'https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.3.x/dist/module.esm.js'
-
+    import AlpineI18n from 'https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/module.esm.js'
+    document.addEventListener('alpine-i18n:ready', function () {	
+        // ... scroll to Usage to see where locale and messages came from
+        window.AlpineI18n.create(locale, messages);
+    })
     document.addEventListener('alpine:init', () => {
         window.Alpine.plugin(AlpineI18n)
     })
@@ -103,8 +114,6 @@ document.addEventListener('alpine-i18n:ready', function () {
 });
 ```
 
-**Note**: when using NPM method you wont need to wrap the `create()` line in an event listener.
-
 ### 2 - Usage from inside Alpine Components
 
 #### $t magic helper
@@ -126,7 +135,7 @@ This will make the button's text "button".
 Using variables in translation strings is easy:
 
 ```html
-<span x-text="$t('var', {name: 'rafik})"></span>
+<span x-text="$t('var', {name: 'rafik'})"></span>
 ```
 
 This will make the span's text "hello, rafik"!
