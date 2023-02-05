@@ -1,6 +1,6 @@
-# Alpine i18n Plugin
+# i18n Plugin for Alpine.js
 
-Internationalization (i18n) support for Alpine.js
+Internationalization (i18n) support for Alpine.js (unofficial)
 
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/1)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@2.3.0)
