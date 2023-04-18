@@ -3,7 +3,7 @@
   var localeChange = new Event("alpine-i18n:locale-change");
   var i18nReady = new Event("alpine-i18n:ready");
   var AlpineI18n = {
-    version: "2.3.0",
+    version: "2.4.0",
     set locale(name) {
       this.checkLocale(name);
       this.currentLocale = name;
@@ -31,8 +31,6 @@
       let message = "";
       try {
         message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
-        if (!message)
-          throw "";
       } catch {
       }
       if (!message && this.fallbackLocale.length) {
@@ -41,10 +39,12 @@
         return this.options?.debug ? `???${name}` : name;
       }
       for (const key in vars) {
-        if (Object.prototype.hasOwnProperty.call(vars, key)) {
-          const val = vars[key];
-          let regexp = new RegExp("{s*(" + key + ")s*}", "g");
-          message = message.replaceAll(regexp, val);
+        if (message && message.replaceAll) {
+          if (Object.prototype.hasOwnProperty.call(vars, key)) {
+            const val = vars[key];
+            let regexp = new RegExp("{s*(" + key + ")s*}", "g");
+            message = message.replaceAll(regexp, val);
+          }
         }
       }
       return this.options?.debug ? `[${message}]` : message;

@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [2.4.0] - 2023-04-18
+
+## Fixed
+
+-   Fixed error when accessing unset element with params (#5)
+
 ## [2.2.1] - 2021-10-22
 
 ## Fixed
@@ -30,14 +36,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## Added
 
--	Added `window.AlpineI18n.fallbackLocale`.
+-   Added `window.AlpineI18n.fallbackLocale`.
 
 ## [2.0.0] - 2021-07-15
 
 ## Removed
 
 -   Removed Alpine v2 support in favor of Alpine v3, use v1.0.0 for Alpine v2.
--	Removed `subscribe()` and `updateSubscribers()` in favor of `Alpine.reactive()`.
+-   Removed `subscribe()` and `updateSubscribers()` in favor of `Alpine.reactive()`.
 
 ## Changed
 
@@ -45,19 +51,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## Added
 
--	Added `alpine-i18n:ready` event for when the plugin is loaded
+-   Added `alpine-i18n:ready` event for when the plugin is loaded
 
 ## [1.0.0] - 2021-05-23
 
--	First stable version! The API wont have any breaking changes till next version.
--	Note: no breaking changes from the last development version.
+-   First stable version! The API wont have any breaking changes till next version.
+-   Note: no breaking changes from the last development version.
 
 ## [0.0.3] - 2021-05-17
 
 ## Improved
 
 -   Improve Typescript support
-
 
 ## [0.0.2] - 2021-05-17
 
@@ -92,4 +97,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 [2.1.0]: https://github.com/pinecone-router/router/compare/2.0.0...2.1.0
 [2.1.1]: https://github.com/pinecone-router/router/compare/2.1.0...2.1.1
 [2.2.0]: https://github.com/pinecone-router/router/compare/2.1.1...2.2.0
-[2.2.0]: https://github.com/pinecone-router/router/compare/2.2.0...2.2.1
+[2.2.1]: https://github.com/pinecone-router/router/compare/2.2.0...2.2.1
+[2.3.0]: https://github.com/pinecone-router/router/compare/2.2.1...2.3.0
+[2.4.0]: https://github.com/pinecone-router/router/compare/2.3.0...2.4.0
