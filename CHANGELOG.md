@@ -10,46 +10,52 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [2.4.0] - 2023-04-18
 
-## Fixed
+### Fixed
 
 -   Fixed error when accessing unset element with params (#5)
 
+## [2.4.0] - 2022-05-21
+
+## Added
+
+-   Debug mode (#2).
+
 ## [2.2.1] - 2021-10-22
 
-## Fixed
+### Fixed
 
 -   Fix fallbackLocale, for real.
 
 ## [2.2.0] - 2021-10-22
 
-## Fixed
+### Fixed
 
 -   Fix fallbackLocale.
 
 ## [2.1.1] - 2021-10-22
 
-## Fixed
+### Fixed
 
 -   Fix uncaught exception.
 
 ## [2.1.0] - 2021-10-22
 
-## Added
+### Added
 
 -   Added `window.AlpineI18n.fallbackLocale`.
 
 ## [2.0.0] - 2021-07-15
 
-## Removed
+### Removed
 
 -   Removed Alpine v2 support in favor of Alpine v3, use v1.0.0 for Alpine v2.
 -   Removed `subscribe()` and `updateSubscribers()` in favor of `Alpine.reactive()`.
 
-## Changed
+### Changed
 
 -   Renamed `locale-change` event to `alpine-i18n:locale-change` and make it dispatch to document instead of window.
 
-## Added
+### Added
 
 -   Added `alpine-i18n:ready` event for when the plugin is loaded
 
@@ -60,13 +66,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [0.0.3] - 2021-05-17
 
-## Improved
+### Improved
 
 -   Improve Typescript support
 
 ## [0.0.2] - 2021-05-17
 
-## Improved
+### Improved
 
 -   Improve Typescript support using [`@leanadmin/alpine-typescript`](https://github.com/leanadmin/alpine-typescript)
 
