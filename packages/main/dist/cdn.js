@@ -3,7 +3,7 @@
   var localeChange = new Event("alpine-i18n:locale-change");
   var i18nReady = new Event("alpine-i18n:ready");
   var AlpineI18n = {
-    version: "2.4.0",
+    version: "2.4.1",
     set locale(name) {
       this.checkLocale(name);
       this.currentLocale = name;
@@ -24,7 +24,7 @@
     },
     checkLocale(locale) {
       if (!Object.keys(this.messages).includes(locale)) {
-        throw new Error(`Alpine I18n: The locale ${this.locale} does not exist.`);
+        throw new Error(`Alpine I18n: The locale ${locale} does not exist.`);
       }
     },
     t(name, vars) {

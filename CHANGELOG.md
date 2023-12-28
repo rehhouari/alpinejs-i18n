@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [2.4.1] - 2023-12-28
+
+### Fixed
+
+-   Complain about the local that was not found, not the current one. (#11)
+
 ## [2.4.0] - 2023-04-18
 
 ### Fixed
@@ -106,3 +112,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 [2.2.1]: https://github.com/pinecone-router/router/compare/2.2.0...2.2.1
 [2.3.0]: https://github.com/pinecone-router/router/compare/2.2.1...2.3.0
 [2.4.0]: https://github.com/pinecone-router/router/compare/2.3.0...2.4.0
+[2.4.1]: https://github.com/pinecone-router/router/compare/2.4.0...2.4.1
