@@ -57,7 +57,7 @@ const AlpineI18n = {
     checkLocale(locale: string) {
         if (!Object.keys(this.messages).includes(locale)) {
             throw new Error(
-                `Alpine I18n: The locale ${this.locale} does not exist.`
+                `Alpine I18n: The locale ${locale} does not exist.`
             );
         }
     },
