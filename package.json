@@ -8,6 +8,21 @@
         "type": "git",
         "url": "https://github.com/rehhouari/alpinejs-i18n"
     },
+    "keywords": [
+        "alpinejs",
+        "i18n",
+        "internationalization",
+        "internationalisation",
+        "translation",
+        "translate",
+        "localization",
+        "localisation",
+        "alpine",
+        "alpine.js",
+        "Alpine JS",
+        "Alpine JS Plugin",
+        "Alpine JS Plugins"
+    ],
     "main": "dist/module.cjs.js",
     "module": "dist/module.esm.min.js",
     "devDependencies": {
