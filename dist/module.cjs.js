@@ -1,8 +1,21 @@
-// packages/main/src/index.ts
+var __defProp = Object.defineProperty;
+var __markAsModule = (target) => __defProp(target, "__esModule", {value: true});
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, {get: all[name], enumerable: true});
+};
+
+// builds/module.js
+__markAsModule(exports);
+__export(exports, {
+  default: () => module_default
+});
+
+// src/index.ts
 var localeChange = new Event("alpine-i18n:locale-change");
 var i18nReady = new Event("alpine-i18n:ready");
 var AlpineI18n = {
-  version: "2.4.1",
+  version: "2.4.2",
   set locale(name) {
     this.checkLocale(name);
     this.currentLocale = name;
@@ -27,6 +40,7 @@ var AlpineI18n = {
     }
   },
   t(name, vars) {
+    var _a, _b;
     let message = "";
     try {
       message = name.split(".").reduce((o, i) => o[i], this.messages[this.locale]);
@@ -35,7 +49,7 @@ var AlpineI18n = {
     if (!message && this.fallbackLocale.length) {
       message = name.split(".").reduce((o, i) => o[i], this.messages[this.fallbackLocale]);
     } else if (!message) {
-      return this.options?.debug ? `???${name}` : name;
+      return ((_a = this.options) == null ? void 0 : _a.debug) ? `???${name}` : name;
     }
     for (const key in vars) {
       if (message && message.replaceAll) {
@@ -46,7 +60,7 @@ var AlpineI18n = {
         }
       }
     }
-    return this.options?.debug ? `[${message}]` : message;
+    return ((_b = this.options) == null ? void 0 : _b.debug) ? `[${message}]` : message;
   }
 };
 function src_default(Alpine) {
@@ -66,8 +80,5 @@ function src_default(Alpine) {
   });
 }
 
-// packages/main/builds/module.js
+// builds/module.js
 var module_default = src_default;
-export {
-  module_default as default
-};

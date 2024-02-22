@@ -1,9 +1,9 @@
 (() => {
-  // packages/main/src/index.ts
+  // src/index.ts
   var localeChange = new Event("alpine-i18n:locale-change");
   var i18nReady = new Event("alpine-i18n:ready");
   var AlpineI18n = {
-    version: "2.4.1",
+    version: "2.4.2",
     set locale(name) {
       this.checkLocale(name);
       this.currentLocale = name;
@@ -67,7 +67,7 @@
     });
   }
 
-  // packages/main/builds/cdn.js
+  // builds/cdn.js
   document.addEventListener("alpine:initializing", () => {
     src_default(window.Alpine);
   });
