@@ -1,0 +1,6 @@
+.vscode/
+.github/
+.editorconfig
+.eslintignore
+.eslintrc.js
+.pnpm-debug.log

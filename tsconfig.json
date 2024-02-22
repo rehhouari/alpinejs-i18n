@@ -1,18 +1,24 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"module": "ESNext",
-		"target": "ESNext",
-		"lib": ["DOM", "ESNext"],
-		"strict": true,
-		"esModuleInterop": true,
-		"incremental": false,
-		"skipLibCheck": true,
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"noUnusedLocals": true,
-		"strictNullChecks": true,
-		"forceConsistentCasingInFileNames": true,
-	},
-	"exclude": ["*/**/dist", "node_modules"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "ESNext",
+        "target": "ESNext",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "strict": true,
+        "esModuleInterop": true,
+        "incremental": false,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+    },
+    "exclude": [
+        "/dist",
+        "node_modules"
+    ]
 }
