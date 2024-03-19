@@ -22,8 +22,6 @@ Version **1.0.0** for Alpine v2.
 
 #### [Demo](https://alpinejs-i18n-example.vercel.app/)
 
-> You can implement loading locales from files. for example, [see my Alpine.js template _rapide_](https://github.com/rehhouari/rapide)
-
 ## Features
 
 -   Easy localization of strings using a [magic helper](#t-magic-helper)
