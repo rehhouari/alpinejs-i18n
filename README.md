@@ -234,6 +234,6 @@ Community project by [@rehhouari](https://github.com/rehhouari), not affiliated 
 
 ## License
 
-Copyright (c) 2023 Rafik El Hadi Houari.
+Copyright (c) 2024 Rafik El Hadi Houari.
 
 Licensed under the MIT license, see [LICENSE.md](LICENSE.md) for details.
