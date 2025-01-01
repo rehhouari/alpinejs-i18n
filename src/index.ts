@@ -2,7 +2,7 @@ const localeChange = new Event('alpine-i18n:locale-change');
 const i18nReady = new Event('alpine-i18n:ready');
 
 const AlpineI18n = {
-	version: '2.5.1',
+	version: '2.5.2',
 
 	/**
 	 * setter for the current locale

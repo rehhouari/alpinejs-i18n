@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [2.5.2] - 2025-01-01
+
+## Changed
+
+-   Update package.json
+
 ## [2.5.1] - 2025-01-01
 
 ## Changed
@@ -138,3 +144,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 [2.4.2]: https://github.com/pinecone-router/router/compare/2.4.1...2.4.2
 [2.5.0]: https://github.com/pinecone-router/router/compare/2.4.2...2.5.0
 [2.5.0]: https://github.com/pinecone-router/router/compare/2.5.0...2.5.1
+[2.5.1]: https://github.com/pinecone-router/router/compare/2.5.1...2.5.2
