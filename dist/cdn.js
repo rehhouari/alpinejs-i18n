@@ -3,7 +3,7 @@
   var localeChange = new Event("alpine-i18n:locale-change");
   var i18nReady = new Event("alpine-i18n:ready");
   var AlpineI18n = {
-    version: "2.4.2",
+    version: "2.5.0",
     set locale(name) {
       this.checkLocale(name);
       this.currentLocale = name;

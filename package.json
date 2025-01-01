@@ -1,45 +1,37 @@
 {
-    "name": "alpinejs-i18n",
-    "description": "Internationalization (i18n) support for Alpine.js",
-    "license": "MIT",
-    "author": "Rafik El Hadi Houari",
-    "version": "2.4.2",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rehhouari/alpinejs-i18n"
-    },
-    "keywords": [
-        "alpinejs",
-        "i18n",
-        "internationalization",
-        "internationalisation",
-        "translation",
-        "translate",
-        "localization",
-        "localisation",
-        "alpine",
-        "alpine.js",
-        "Alpine JS",
-        "Alpine JS Plugin",
-        "Alpine JS Plugins"
-    ],
-    "main": "dist/module.cjs.js",
-    "module": "dist/module.esm.min.js",
-    "devDependencies": {
+	"name": "alpinejs-i18n",
+	"description": "Internationalization (i18n) support for Alpine.js",
+	"license": "MIT",
+	"author": "Rafik El Hadi Houari",
+	"version": "2.5.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rehhouari/alpinejs-i18n"
+	},
+	"keywords": [
+		"alpinejs",
+		"i18n",
+		"internationalization",
+		"internationalisation",
+		"translation",
+		"translate",
+		"localization",
+		"localisation",
+		"alpine",
+		"alpine.js",
+		"Alpine JS",
+		"Alpine JS Plugin",
+		"Alpine JS Plugins"
+	],
+	"main": "dist/module.cjs.js",
+	"module": "dist/module.esm.min.js",
+	"devDependencies": {
         "brotli-size": "^4.0.0",
-        "esbuild": "^0.8.39",
-        "eslint": "^7.22.0",
-        "eslint-config-standard": "^16.0.2",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^4.3.1",
-        "eslint-plugin-standard": "^4.1.0",
-        "lint-staged": "^10.5.4"
-    },
-    "scripts": {
-        "build": "node ./scripts/build.js",
-        "watch": "node ./scripts/build.js --watch",
-        "lint": "eslint .",
-        "lint-fix": "eslint . --fix"
-    }
+		"esbuild": "^0.8.39",
+		"typescript": "^5.7.2"
+	},
+	"scripts": {
+		"build": "node ./scripts/build.js && tsc --emitDeclarationOnly --declaration --project tsconfig.json",
+        "watch": "node ./scripts/build.js --watch && tsc --emitDeclarationOnly --declaration --project tsconfig.json"
+	}
 }

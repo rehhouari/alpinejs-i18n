@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+## [2.5.0] - 2025-01-01
+
+## Added
+
+-   Added Typescript definitona (.d.ts files)
+
 ## [2.4.2] - 2024-02-22
 
 ### Changed
@@ -124,3 +130,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 [2.4.0]: https://github.com/pinecone-router/router/compare/2.3.0...2.4.0
 [2.4.1]: https://github.com/pinecone-router/router/compare/2.4.0...2.4.1
 [2.4.2]: https://github.com/pinecone-router/router/compare/2.4.1...2.4.2
+[2.5.0]: https://github.com/pinecone-router/router/compare/2.4.2...2.5.0

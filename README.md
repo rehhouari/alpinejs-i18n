@@ -2,9 +2,9 @@
 
 Internationalization (i18n) support for Alpine.js (unofficial)
 
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/2.4.2)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@2.4.2)
-[![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n)](https://www.jsdelivr.com/package/npm/alpinejs-i18n?version=2.4.2)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/rehhouari/alpinejs-i18n)](https://github.com/rehhouari/alpinejs-i18n/tree/2.5.0)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/alpinejs-i18n)](https://bundlephobia.com/result?p=alpinejs-i18n@2.5.0)
+[![Downloads from Jsdelivr NPM](https://img.shields.io/jsdelivr/npm/hm/alpinejs-i18n)](https://www.jsdelivr.com/package/npm/alpinejs-i18n?version=2.5.0)
 [![npm](https://img.shields.io/npm/dm/alpinejs-i18n)](https://npmjs.com/package/alpinejs-i18n)
 [![Changelog](https://img.shields.io/badge/change-log-log)](/CHANGELOG.md)
 [![Donate](https://img.shields.io/badge/Support-%E2%99%A5-pink)](https://ko-fi.com/rehhouari)
@@ -46,12 +46,12 @@ npm install alpinejs-i18n
 ```
 
 ```js
-import AlpineI18n from "alpinejs-i18n";
-import Alpine from "alpinejs";
+import AlpineI18n from 'alpinejs-i18n';
+import Alpine from 'alpinejs';
 
-document.addEventListener("alpine-i18n:ready", function () {
-    // ... scroll to Usage to see where locale and messages came from
-    window.AlpineI18n.create(locale, messages);
+document.addEventListener('alpine-i18n:ready', function () {
+	// ... scroll to Usage to see where locale and messages came from
+	window.AlpineI18n.create(locale, messages);
 });
 Alpine.plugin(AlpineI18n);
 Alpine.start();
@@ -63,14 +63,14 @@ Add the following `<script>` to the `<head>` of your document **before** includi
 
 ```html
 <script type="module">
-    import AlpineI18n from "https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/module.esm.min.js";
-    document.addEventListener("alpine-i18n:ready", function () {
-        // ... scroll to Usage to see where locale and messages came from
-        window.AlpineI18n.create(locale, messages);
-    });
-    document.addEventListener("alpine:init", () => {
-        window.Alpine.plugin(AlpineI18n);
-    });
+	import AlpineI18n from 'https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/module.esm.min.js';
+	document.addEventListener('alpine-i18n:ready', function () {
+		// ... scroll to Usage to see where locale and messages came from
+		window.AlpineI18n.create(locale, messages);
+	});
+	document.addEventListener('alpine:init', () => {
+		window.Alpine.plugin(AlpineI18n);
+	});
 </script>
 ```
 
@@ -83,34 +83,34 @@ In Javascript, after importing `alpinejs-i18n`:
 ```js
 // the default locale
 // you can for example take it from the URL.
-let locale = "en";
+let locale = 'en';
 
 // the translation data
 // you can load/fetch these from files or keep them hardcoded.
 let messages = {
-    en: {
-        basic: "button",
-        // can have variables
-        var: "hello, {name}",
-        // can be nested
-        deep: {
-            one: "one",
-            two: "two",
-        },
-    },
-    ar: {
-        basic: "زر",
-        var: "مرحبا, {name}",
-        deep: {
-            one: "واحد",
-            two: "اثنان",
-        },
-    },
+	en: {
+		basic: 'button',
+		// can have variables
+		var: 'hello, {name}',
+		// can be nested
+		deep: {
+			one: 'one',
+			two: 'two',
+		},
+	},
+	ar: {
+		basic: 'زر',
+		var: 'مرحبا, {name}',
+		deep: {
+			one: 'واحد',
+			two: 'اثنان',
+		},
+	},
 };
 
 // finally, pass them to AlpineI18n:
-document.addEventListener("alpine-i18n:ready", function () {
-    window.AlpineI18n.create(locale, messages);
+document.addEventListener('alpine-i18n:ready', function () {
+	window.AlpineI18n.create(locale, messages);
 });
 ```
 
@@ -124,7 +124,7 @@ Following the example settings above:
 
 ```html
 <div x-data>
-    <button x-text="$t('basic')"></button>
+	<button x-text="$t('basic')"></button>
 </div>
 ```
 
@@ -200,23 +200,23 @@ AlpineI18n.locale;
 **Setting the locale**
 
 ```js
-AlpineI18n.locale = "ar";
+AlpineI18n.locale = 'ar';
 ```
 
 ##### Changing writing direction from Javascript
 
 ```html
 <script>
-    // define the RTL locales you support
-    var rtlLocales = ["ar", "fa"];
-    // listen to locale changes
-    window.addEventListener("alpine-i18n:locale-change", function () {
-        if (rtlLocales.includes(window.AlpineI18n.locale)) {
-            document.body.setAttribute("dir", "rtl");
-        } else {
-            document.body.removeAttribute("dir");
-        }
-    });
+	// define the RTL locales you support
+	var rtlLocales = ['ar', 'fa'];
+	// listen to locale changes
+	window.addEventListener('alpine-i18n:locale-change', function () {
+		if (rtlLocales.includes(window.AlpineI18n.locale)) {
+			document.body.setAttribute('dir', 'rtl');
+		} else {
+			document.body.removeAttribute('dir');
+		}
+	});
 </script>
 ```
 
