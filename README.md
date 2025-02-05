@@ -210,7 +210,7 @@ AlpineI18n.locale = 'ar';
 	// define the RTL locales you support
 	var rtlLocales = ['ar', 'fa'];
 	// listen to locale changes
-	window.addEventListener('alpine-i18n:locale-change', function () {
+	document.addEventListener('alpine-i18n:locale-change', function () {
 		if (rtlLocales.includes(window.AlpineI18n.locale)) {
 			document.body.setAttribute('dir', 'rtl');
 		} else {
