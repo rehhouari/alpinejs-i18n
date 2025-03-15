@@ -1,21 +1,34 @@
+"use strict";
 var __defProp = Object.defineProperty;
-var __markAsModule = (target) => __defProp(target, "__esModule", {value: true});
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
-    __defProp(target, name, {get: all[name], enumerable: true});
+    __defProp(target, name, { get: all[name], enumerable: true });
 };
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // builds/module.js
-__markAsModule(exports);
-__export(exports, {
+var module_exports = {};
+__export(module_exports, {
   default: () => module_default
 });
+module.exports = __toCommonJS(module_exports);
 
 // src/index.ts
 var localeChange = new Event("alpine-i18n:locale-change");
 var i18nReady = new Event("alpine-i18n:ready");
 var AlpineI18n = {
-  version: "2.5.2",
+  version: "2.5.3",
   set locale(name) {
     this.checkLocale(name);
     this.currentLocale = name;
@@ -36,7 +49,9 @@ var AlpineI18n = {
   },
   checkLocale(locale) {
     if (!Object.keys(this.messages).includes(locale)) {
-      throw new Error(`Alpine I18n: The locale ${locale} does not exist.`);
+      throw new Error(
+        `Alpine I18n: The locale ${locale} does not exist.`
+      );
     }
   },
   t(name, vars) {
@@ -63,7 +78,7 @@ var AlpineI18n = {
     return ((_b = this.options) == null ? void 0 : _b.debug) ? `[${message}]` : message;
   }
 };
-function src_default(Alpine) {
+var i18nPlugin = function(Alpine) {
   window.AlpineI18n = Alpine.reactive(AlpineI18n);
   document.dispatchEvent(i18nReady);
   Alpine.magic("locale", (el) => {
@@ -78,7 +93,10 @@ function src_default(Alpine) {
       return window.AlpineI18n.t(name, vars);
     };
   });
-}
+};
+var src_default = i18nPlugin;
 
 // builds/module.js
 var module_default = src_default;
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {});

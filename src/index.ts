@@ -1,8 +1,26 @@
+import { PluginCallback, type Alpine } from 'alpinejs';
+
 const localeChange = new Event('alpine-i18n:locale-change');
 const i18nReady = new Event('alpine-i18n:ready');
 
+declare module 'alpinejs' {
+	interface Magics<T> {
+		$locale: $locale;
+		$t: $t;
+	}
+}
+
+declare global {
+	interface Window {
+		AlpineI18n: typeof AlpineI18n;
+	}
+}
+
+type $t = (name: string, vars?: { [name: string]: string }) => string;
+type $locale = (locale?: string) => string | void;
+
 const AlpineI18n = {
-	version: '2.5.2',
+	version: '2.5.3',
 
 	/**
 	 * setter for the current locale
@@ -68,7 +86,7 @@ const AlpineI18n = {
 	 * @param vars optional variables to be passed to the string
 	 * @returns string
 	 */
-	t(name: string, vars?: { [name: string]: any }) {
+	t(name: string, vars?: { [name: string]: string }) {
 		let message: string = '';
 		try {
 			message = name
@@ -98,9 +116,10 @@ const AlpineI18n = {
 	},
 };
 
-export default function (Alpine: any) {
+const i18nPlugin: PluginCallback = function (Alpine: Alpine) {
 	window.AlpineI18n = Alpine.reactive(AlpineI18n);
 	document.dispatchEvent(i18nReady);
+
 	Alpine.magic('locale', (el: HTMLElement) => {
 		return (locale: string | undefined) => {
 			if (!locale) return window.AlpineI18n.locale;
@@ -113,10 +132,6 @@ export default function (Alpine: any) {
 			return window.AlpineI18n.t(name, vars);
 		};
 	});
-}
+};
 
-declare global {
-	interface Window {
-		AlpineI18n: typeof AlpineI18n;
-	}
-}
+export default i18nPlugin;

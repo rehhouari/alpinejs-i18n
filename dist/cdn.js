@@ -1,9 +1,10 @@
+"use strict";
 (() => {
   // src/index.ts
   var localeChange = new Event("alpine-i18n:locale-change");
   var i18nReady = new Event("alpine-i18n:ready");
   var AlpineI18n = {
-    version: "2.5.2",
+    version: "2.5.3",
     set locale(name) {
       this.checkLocale(name);
       this.currentLocale = name;
@@ -24,7 +25,9 @@
     },
     checkLocale(locale) {
       if (!Object.keys(this.messages).includes(locale)) {
-        throw new Error(`Alpine I18n: The locale ${locale} does not exist.`);
+        throw new Error(
+          `Alpine I18n: The locale ${locale} does not exist.`
+        );
       }
     },
     t(name, vars) {
@@ -50,7 +53,7 @@
       return this.options?.debug ? `[${message}]` : message;
     }
   };
-  function src_default(Alpine) {
+  var i18nPlugin = function(Alpine) {
     window.AlpineI18n = Alpine.reactive(AlpineI18n);
     document.dispatchEvent(i18nReady);
     Alpine.magic("locale", (el) => {
@@ -65,7 +68,8 @@
         return window.AlpineI18n.t(name, vars);
       };
     });
-  }
+  };
+  var src_default = i18nPlugin;
 
   // builds/cdn.js
   document.addEventListener("alpine:initializing", () => {

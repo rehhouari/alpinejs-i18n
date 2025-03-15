@@ -1,3 +1,19 @@
+import { PluginCallback } from 'alpinejs';
+declare module 'alpinejs' {
+    interface Magics<T> {
+        $locale: $locale;
+        $t: $t;
+    }
+}
+declare global {
+    interface Window {
+        AlpineI18n: typeof AlpineI18n;
+    }
+}
+type $t = (name: string, vars?: {
+    [name: string]: string;
+}) => string;
+type $locale = (locale?: string) => string | void;
 declare const AlpineI18n: {
     version: string;
     /**
@@ -36,14 +52,9 @@ declare const AlpineI18n: {
      * @returns string
      */
     t(name: string, vars?: {
-        [name: string]: any;
+        [name: string]: string;
     }): string;
 };
-export default function (Alpine: any): void;
-declare global {
-    interface Window {
-        AlpineI18n: typeof AlpineI18n;
-    }
-}
-export {};
+declare const i18nPlugin: PluginCallback;
+export default i18nPlugin;
 //# sourceMappingURL=index.d.ts.map
