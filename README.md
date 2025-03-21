@@ -173,8 +173,8 @@ document.addEventListener('alpine-i18n:ready', function () {
 <div x-data :dir="{'rtl': $locale() == 'ar'}"></div>
 ```
 
-> **NOTE**: If you want to set it on the entire `body`, **do not make the `body` an Alpine Component**!
-> [Use this method from Javascript instead](#Changing-writing-direction-from-Javascript)!
+> **NOTE**: If you want to set it on the entire `body`, **do not make the `body` an Alpine Component**,
+> [Use this method from Javascript instead](#changing-writing-direction-from-javascript)!
 > The reason for not making body an Alpine component is because it can affect the performance of the site, if the page is big.
 
 #### Usage from Javascript
@@ -186,7 +186,7 @@ All features can be used outside Alpine.js components, meaning from Javascript!
 ##### Localizing strings t()
 
 ```js
-AlpineI18n.t('key', {var: 'val})
+AlpineI18n.t('key', {var: val})
 ```
 
 ##### Getting & Setting Locale
