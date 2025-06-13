@@ -11,8 +11,8 @@ Internationalization (i18n) support for Alpine.js (unofficial)
 
 ## About
 
-This plugin allow you to easily use localization in your Alpine.js projects!
-It provide two _magic helpers_ that you can use to localize strings in your Alpine.js websites & apps.
+This plugin allows you to easily use localization in your Alpine.js projects!
+It provide two _magic helpers_ that you can use to localize strings in your Alpine.js websites & webapps.
 
 ## Compatibility
 
